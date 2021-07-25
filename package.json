@@ -1,0 +1,17 @@
+{
+  "name": "pwa",
+  "version": "0.0.1",
+  "scripts": {
+    "prelint": "prettier --write .",
+    "lint": "eslint **/*.js --fix || false",
+    "predev": "yarn lint",
+    "dev": "live-server --cors --port=5500",
+    "deploy:netlify-live": "netlify deploy -p --dir=."
+  },
+  "pre-commit": "lint",
+  "devDependencies": {
+    "eslint": "^7.31.0",
+    "eslint-config-google": "^0.14.0",
+    "pre-commit": "^1.2.2"
+  }
+}

@@ -1,0 +1,17 @@
+.git
+.github
+.netlify
+.vscode
+build
+docker
+docs
+koa/views
+node_modules
+css/vendor
+css/app.min.css
+css/main.min.css
+js/vendor
+js/main.min.js
+js/store.min.js
+js/toast.min.js
+js/utils.min.js

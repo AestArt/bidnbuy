@@ -1,8 +1,8 @@
-# pwa template
+# bidnbuy
 
 [![code style: prettier](https://img.shields.io/badge/code_style-prettier-ff69b4.svg?style=flat-square)](https://github.com/prettier/prettier)
 
-Custom template for progressive web applications using HTML, CSS and Javascript
+Web app for auctioning
 
 ## Table of Content
 
@@ -17,7 +17,7 @@ Custom template for progressive web applications using HTML, CSS and Javascript
 
 ### Why this project?
 
-- To make it easier to setup and start plain HTML, CSS and Javascript projects
+- To make it easier to auction items online
 
 ### App Architecture
 
@@ -40,24 +40,9 @@ To use this repo, you are required to install:
 
 ```bash
 ---
-git clone https://github.com/amjedidiah/pwa-template.git pwa-template
-cd pwa-template
+git clone https://github.com/amjedidiah/bidnbuy-template.git bidnbuy-template
+cd bidnbuy-template
 bash get-started.sh
-```
-
-### Todos
-
-- [ ] Rename folder name to app name
-- [ ] Replace all occurrences of **_pwa_** with app name
-- [ ] Update **_sw.js_** with files to cache
-- [ ] Update **_site.webmanifest_**, including shortcuts
-- [ ] Delete **_index.html_**
-- [ ] Delete **_shortcut.html_**
-- [ ] Update **_README.md_**, according to this [guide](https://raw.githubusercontent.com/amjedidiah/react-app-template/master/README.md)
-- [ ] Update **_humans.txt_**
-- [ ] Update **_favicon.ico_**
-- [ ] Update **_CODEOWNERS_**
-- [ ] Update **_images/logo192.png_** and **_images/logo512.png_**
 
 ## Notes
 

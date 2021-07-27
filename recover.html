@@ -3,8 +3,8 @@
   <head>
     <meta charset="utf-8" />
 
-    <title>Login | Bidnbuy</title>
-    <meta name="description" content="Login to your Bidnbuy account" />
+    <title>Recover Password | Bidnbuy</title>
+    <meta name="description" content="Recover your Bidnbuy password" />
     <meta name="robots" content="index,follow" />
     <meta property="fb:page_id" content="" />
     <meta http-equiv="X-UA-Compatible" content="ie=edge" />
@@ -213,57 +213,29 @@
       </nav>
     </header>
     <!-- Document Main Content -->
-    <main id="login" class="vh-100 py-5 py-xl-0">
+    <main id="recover" class="vh-100 py-5 py-xl-0">
       <section class="container-fluid h-100">
         <h1 class="d-none">Home Section</h1>
         <article class="row h-100 align-items-center">
           <h2 class="d-none">Home Article</h2>
           <div class="col-12 col-xl-6 text-center p-4 p-sm-5">
-            <h2 class="text-uppercase mb-2">Login</h2>
-            <p>Don't have an account? <a href="./register.html">Register</a></p>
+            <h2 class="text-uppercase mb-2">Recover Password</h2>
 
             <form class="text-start mt-4 mt-md-0 p-sm-3 p-md-4">
               <div class="form-floating mb-4">
                 <input
-                  type="text"
+                  type="email"
                   class="form-control form-control--custom"
-                  id="loginID"
+                  id="registerEmail"
+                  placeholder="e.g: johndoe@example.com"
+                  aria-describedby="emailHelp"
                 />
-                <label class="text-uppercase" for="loginID"
-                  >Phone Number or Email Address</label
-                >
-              </div>
-              <div class="form-floating mb-4">
-                <div class="input-group rounded">
-                  <input
-                    type="password"
-                    class="form-control form-control--custom border-0"
-                    id="loginPassword"
-                    placeholder="Password"
-                    aria-describedby="passwordHelp"
-                  />
-                  <span
-                    class="input-group-text bg-transparent border-0"
-                    id="basic-addon2"
-                    ><i class="fa fa-eye-slash" aria-hidden="true"></i
-                  ></span>
-                </div>
-                <label class="text-uppercase" for="loginPassword"
-                  >Password</label
-                >
-                <div id="passwordHelp" class="form-text text-end">
-                  <a href="recover.html">Forgot password?</a>
+                <label class="text-uppercase" for="registerEmail">Email</label>
+                <div id="emailHelp" class="form-text">
+                  We'll never share your email with anyone else.
                 </div>
               </div>
 
-              <div class="mb-4">
-                <label>
-                  <strong>Friendly Reminder:</strong> You are only entitled to
-                  operate ONE account. Violation of this policy may result in
-                  suspension of your account and forfeiture of your wins. Please
-                  see our <a href="terms.html">Terms of Use</a>.</label
-                >
-              </div>
               <button
                 class="
                   btn btn-success btn-success--custom
@@ -272,7 +244,7 @@
                   btn-lg
                 "
               >
-                Login
+                Recover Password
               </button>
             </form>
           </div>

@@ -6,6 +6,8 @@ const filesToCache = [
   'css/vendor/bootstrap.min.css.map',
   'css/app.css',
   'css/app.min.css',
+  'css/font.css',
+  'css/font.min.css',
   'css/main.css',
   'css/main.min.css',
   'images/logo192.png',

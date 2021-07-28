@@ -1,1 +1,174 @@
-@font-face{font-family:'Futura PT';src:url(../fonts/futura/FuturaPTLight.otf);font-display:swap;font-weight:300}@font-face{font-family:'Futura PT';src:url(../fonts/futura/FuturaPTMedium.otf);font-display:swap;font-weight:500}@font-face{font-family:'Futura PT';src:url(../fonts/futura/FuturaPTCondMedium.otf);font-display:swap;font-weight:500;font-stretch:condensed}@font-face{font-family:'Futura PT';src:url(../fonts/futura/FuturaPTDemi.otf);font-display:swap;font-weight:600}@font-face{font-family:'Futura PT';src:url(../fonts/futura/FuturaPTBold.otf);font-display:swap;font-weight:700}@font-face{font-family:'Futura PT';src:url(../fonts/futura/FuturaPTCondBold.otf);font-display:swap;font-weight:700;font-stretch:condensed}@font-face{font-family:'Futura PT';src:url(../fonts/futura/FuturaPTExtraBold.otf);font-display:swap;font-weight:800}@font-face{font-family:'Futura PT';src:url(../fonts/futura/FuturaPTCondExtraBold.otf);font-display:swap;font-weight:800;font-stretch:condensed}@font-face{font-family:'Futura PT';src:url(../fonts/futura/FuturaPTHeavy.otf);font-display:swap;font-weight:900}@font-face{font-family:Montserrat;src:url(../fonts/montserrat/Montserrat-Thin.ttf);font-display:swap;font-weight:100}@font-face{font-family:Montserrat;src:url(../fonts/montserrat/Montserrat-ThinItalic.ttf);font-display:swap;font-weight:100;font-style:italic}@font-face{font-family:Montserrat;src:url(../fonts/montserrat/Montserrat-ExtraLight.ttf);font-display:swap;font-weight:200}@font-face{font-family:Montserrat;src:url(../fonts/montserrat/Montserrat-ExtraLightItalic.ttf);font-display:swap;font-weight:200;font-style:italic}@font-face{font-family:Montserrat;src:url(../fonts/montserrat/Montserrat-Light.ttf);font-display:swap;font-weight:300}@font-face{font-family:Montserrat;src:url(../fonts/montserrat/Montserrat-LightItalic.ttf);font-display:swap;font-weight:300;font-style:italic}@font-face{font-family:Montserrat;src:url(../fonts/montserrat/Montserrat-Regular.ttf);font-display:swap;font-weight:400}@font-face{font-family:Montserrat;src:url(../fonts/montserrat/Montserrat-Italic.ttf);font-display:swap;font-weight:400;font-style:italic}@font-face{font-family:Montserrat;src:url(../fonts/montserrat/Montserrat-Medium.ttf);font-display:swap;font-weight:500}@font-face{font-family:Montserrat;src:url(../fonts/montserrat/Montserrat-MediumItalic.ttf);font-display:swap;font-weight:500;font-style:italic}@font-face{font-family:Montserrat;src:url(../fonts/montserrat/Montserrat-SemiBold.ttf);font-display:swap;font-weight:600}@font-face{font-family:Montserrat;src:url(../fonts/montserrat/Montserrat-SemiBoldItalic.ttf);font-display:swap;font-weight:600;font-style:italic}@font-face{font-family:Montserrat;src:url(../fonts/montserrat/Montserrat-Bold.ttf);font-display:swap;font-weight:700}@font-face{font-family:Montserrat;src:url(../fonts/montserrat/Montserrat-BoldItalic.ttf);font-display:swap;font-weight:700;font-style:italic}@font-face{font-family:Montserrat;src:url(../fonts/montserrat/Montserrat-ExtraBold.ttf);font-display:swap;font-weight:800}@font-face{font-family:Montserrat;src:url(../fonts/montserrat/Montserrat-ExtraBoldItalic.ttf);font-display:swap;font-weight:800;font-style:italic}@font-face{font-family:Montserrat;src:url(../fonts/montserrat/Montserrat-Black.ttf);font-display:swap;font-weight:900}@font-face{font-family:Montserrat;src:url(../fonts/montserrat/Montserrat-BlackItalic.ttf);font-display:swap;font-weight:900;font-style:italic}
+@font-face {
+  font-family: 'Futura PT';
+  src: url(../fonts/futura/FuturaPTLight.otf);
+  font-display: swap;
+  font-weight: 300;
+}
+@font-face {
+  font-family: 'Futura PT';
+  src: url(../fonts/futura/FuturaPTMedium.otf);
+  font-display: swap;
+  font-weight: 500;
+}
+@font-face {
+  font-family: 'Futura PT';
+  src: url(../fonts/futura/FuturaPTCondMedium.otf);
+  font-display: swap;
+  font-weight: 500;
+  font-stretch: condensed;
+}
+@font-face {
+  font-family: 'Futura PT';
+  src: url(../fonts/futura/FuturaPTDemi.otf);
+  font-display: swap;
+  font-weight: 600;
+}
+@font-face {
+  font-family: 'Futura PT';
+  src: url(../fonts/futura/FuturaPTBold.otf);
+  font-display: swap;
+  font-weight: 700;
+}
+@font-face {
+  font-family: 'Futura PT';
+  src: url(../fonts/futura/FuturaPTCondBold.otf);
+  font-display: swap;
+  font-weight: 700;
+  font-stretch: condensed;
+}
+@font-face {
+  font-family: 'Futura PT';
+  src: url(../fonts/futura/FuturaPTExtraBold.otf);
+  font-display: swap;
+  font-weight: 800;
+}
+@font-face {
+  font-family: 'Futura PT';
+  src: url(../fonts/futura/FuturaPTCondExtraBold.otf);
+  font-display: swap;
+  font-weight: 800;
+  font-stretch: condensed;
+}
+@font-face {
+  font-family: 'Futura PT';
+  src: url(../fonts/futura/FuturaPTHeavy.otf);
+  font-display: swap;
+  font-weight: 900;
+}
+@font-face {
+  font-family: Montserrat;
+  src: url(../fonts/montserrat/Montserrat-Thin.ttf);
+  font-display: swap;
+  font-weight: 100;
+}
+@font-face {
+  font-family: Montserrat;
+  src: url(../fonts/montserrat/Montserrat-ThinItalic.ttf);
+  font-display: swap;
+  font-weight: 100;
+  font-style: italic;
+}
+@font-face {
+  font-family: Montserrat;
+  src: url(../fonts/montserrat/Montserrat-ExtraLight.ttf);
+  font-display: swap;
+  font-weight: 200;
+}
+@font-face {
+  font-family: Montserrat;
+  src: url(../fonts/montserrat/Montserrat-ExtraLightItalic.ttf);
+  font-display: swap;
+  font-weight: 200;
+  font-style: italic;
+}
+@font-face {
+  font-family: Montserrat;
+  src: url(../fonts/montserrat/Montserrat-Light.ttf);
+  font-display: swap;
+  font-weight: 300;
+}
+@font-face {
+  font-family: Montserrat;
+  src: url(../fonts/montserrat/Montserrat-LightItalic.ttf);
+  font-display: swap;
+  font-weight: 300;
+  font-style: italic;
+}
+@font-face {
+  font-family: Montserrat;
+  src: url(../fonts/montserrat/Montserrat-Regular.ttf);
+  font-display: swap;
+  font-weight: 400;
+}
+@font-face {
+  font-family: Montserrat;
+  src: url(../fonts/montserrat/Montserrat-Italic.ttf);
+  font-display: swap;
+  font-weight: 400;
+  font-style: italic;
+}
+@font-face {
+  font-family: Montserrat;
+  src: url(../fonts/montserrat/Montserrat-Medium.ttf);
+  font-display: swap;
+  font-weight: 500;
+}
+@font-face {
+  font-family: Montserrat;
+  src: url(../fonts/montserrat/Montserrat-MediumItalic.ttf);
+  font-display: swap;
+  font-weight: 500;
+  font-style: italic;
+}
+@font-face {
+  font-family: Montserrat;
+  src: url(../fonts/montserrat/Montserrat-SemiBold.ttf);
+  font-display: swap;
+  font-weight: 600;
+}
+@font-face {
+  font-family: Montserrat;
+  src: url(../fonts/montserrat/Montserrat-SemiBoldItalic.ttf);
+  font-display: swap;
+  font-weight: 600;
+  font-style: italic;
+}
+@font-face {
+  font-family: Montserrat;
+  src: url(../fonts/montserrat/Montserrat-Bold.ttf);
+  font-display: swap;
+  font-weight: 700;
+}
+@font-face {
+  font-family: Montserrat;
+  src: url(../fonts/montserrat/Montserrat-BoldItalic.ttf);
+  font-display: swap;
+  font-weight: 700;
+  font-style: italic;
+}
+@font-face {
+  font-family: Montserrat;
+  src: url(../fonts/montserrat/Montserrat-ExtraBold.ttf);
+  font-display: swap;
+  font-weight: 800;
+}
+@font-face {
+  font-family: Montserrat;
+  src: url(../fonts/montserrat/Montserrat-ExtraBoldItalic.ttf);
+  font-display: swap;
+  font-weight: 800;
+  font-style: italic;
+}
+@font-face {
+  font-family: Montserrat;
+  src: url(../fonts/montserrat/Montserrat-Black.ttf);
+  font-display: swap;
+  font-weight: 900;
+}
+@font-face {
+  font-family: Montserrat;
+  src: url(../fonts/montserrat/Montserrat-BlackItalic.ttf);
+  font-display: swap;
+  font-weight: 900;
+  font-style: italic;
+}

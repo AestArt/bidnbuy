@@ -116,14 +116,14 @@
             >
               <a class="navbar-brand" href="/"
                 ><img
-                src="images/logo-white.png"
-                alt="bidnbuy"
-                class="d-none img--navbar-brand"
-              /><img
-                src="images/logo-success.png"
-                alt="bidnbuy"
-                class="img--navbar-brand"
-              />
+                  src="images/logo-white.png"
+                  alt="bidnbuy"
+                  class="d-none img--navbar-brand"
+                /><img
+                  src="images/logo-success.png"
+                  alt="bidnbuy"
+                  class="img--navbar-brand"
+                />
               </a>
 
               <span
@@ -598,14 +598,14 @@
                 my-4
               "
             >
-              <form class="d-flex mb-2">
+              <form class="d-flex align-items-center mb-3 mb-lg-0">
                 <select
                   class="
                     form-select form-control form-control--custom
                     border-0
                     just-width
                     rounded-0
-                    me-3
+                    mx-2
                   "
                   aria-label="Default select example"
                 >
@@ -636,22 +636,42 @@
               </form>
 
               <form class="d-flex align-items-center">
-                <p>Sort:</p>
-                <select
-                  class="
-                    form-select form-control form-control--custom
-                    border-0
-                    just-width
-                    rounded-0
-                    ms-2
-                  "
-                  aria-label="Default select example"
-                >
-                  <option value="soon" selected>Ending soon</option>
-                  <option value="later">Ending later</option>
-                  <option value="low">Price low</option>
-                  <option value="high">Price high</option>
-                </select>
+                <div class="d-flex align-items-center mx-2">
+                  <label class="form-label m-0 p-0">Sort:</label>
+                  <select
+                    class="
+                      form-select form-control form-control--custom
+                      border-0
+                      just-width
+                      rounded-0
+                      mx-2
+                    "
+                    aria-label="Default select example"
+                  >
+                    <option value="soon" selected>Ending soon</option>
+                    <option value="later">Ending later</option>
+                    <option value="low">Price low</option>
+                    <option value="high">Price high</option>
+                  </select>
+                </div>
+
+                <div class="d-flex align-items-center mx-2 d-none">
+                  <label class="form-label m-0 p-0">Show Product:</label>
+                  <select
+                    class="
+                      form-select form-control form-control--custom
+                      border-0
+                      just-width
+                      rounded-0
+                      mx-2
+                    "
+                  >
+                    <option value="10" selected>10</option>
+                    <option value="15">15</option>
+                    <option value="25">25</option>
+                    <option value="50">50</option>
+                  </select>
+                </div>
               </form>
             </div>
           </div>
@@ -1099,11 +1119,29 @@
           </div>
 
           <div class="col-12 text-center my-5">
-            <a
-              href="auctions.html"
-              class="btn btn-orange-outline btn-lg px-5 text-uppercase"
+            <a class="btn btn-orange-outline btn-lg px-5 text-uppercase"
               >view more</a
             >
+            <ul
+              class="
+                d-flex
+                list-unstyled
+                justify-content-center
+                align-items-center
+                d-none
+              "
+            >
+              <li class="p-2 mx-2 pointer">
+                <span class="fas fa-chevron-left"></span>
+              </li>
+              <li class="p-2 mx-2 pointer border border-orange">1</li>
+              <li class="p-2 mx-2 pointer">2</li>
+              <li class="p-2 mx-2 pointer">3</li>
+              <li class="p-2 mx-2 pointer">4</li>
+              <li class="p-2 mx-2 pointer">
+                <span class="fas fa-chevron-right"></span>
+              </li>
+            </ul>
           </div>
         </article>
       </section>
@@ -1370,7 +1408,9 @@
               <a class="nav-link text-white ps-0" href="partnerships.html"
                 >Partnerships</a
               >
-              <a class="nav-link text-white ps-0" href="sitemap.html">Sitemap</a>
+              <a class="nav-link text-white ps-0" href="sitemap.html"
+                >Sitemap</a
+              >
             </nav>
           </div>
           <div class="col-12 col-sm-6 col-lg-3">
@@ -1386,19 +1426,27 @@
               <a class="nav-link text-white ps-0" href="tips-and-features.html"
                 >Tips & Features</a
               >
-              <a class="nav-link text-white ps-0" href="kobobid-penny-auction.html"
+              <a
+                class="nav-link text-white ps-0"
+                href="kobobid-penny-auction.html"
                 >Kobo Auctions vs. eBay</a
               >
-              <a class="nav-link text-white ps-0" href="orders-and-shipping.html"
+              <a
+                class="nav-link text-white ps-0"
+                href="orders-and-shipping.html"
                 >Orders & Shipping</a
               >
-              <a class="nav-link text-white ps-0" href="payments.html">Payments</a>
+              <a class="nav-link text-white ps-0" href="payments.html"
+                >Payments</a
+              >
             </nav>
           </div>
           <div class="col-12 col-sm-6 col-lg-3">
             <h4 class="text-white ps-0 text-uppercase mb-4">about us</h4>
             <nav class="nav flex-column" aria-label="information">
-              <a class="nav-link text-white ps-0" href="about.html">About Kobobid</a>
+              <a class="nav-link text-white ps-0" href="about.html"
+                >About Kobobid</a
+              >
               <a class="nav-link text-white ps-0" href="kobobid-promise.html"
                 >The Kobobid Promise</a
               >

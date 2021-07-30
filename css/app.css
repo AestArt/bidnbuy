@@ -55,6 +55,10 @@ h6 {
   background-color: var(--light-4);
 }
 
+.bg-pattern-2 {
+  background-image: url(../images/Pattern2.png);
+}
+
 .bg-success--custom {
   background-color: var(--success);
 }
@@ -101,6 +105,10 @@ h6 {
 
 .main-content {
   padding-top: 150px;
+}
+
+.main-content.main-content--no-padding {
+  padding-top: 65px;
 }
 
 .text-gray,
@@ -297,13 +305,6 @@ h6 {
 
 .btn#startBidding {
   margin-top: -100px;
-}
-
-#subscribe {
-  background-image: url(../images/Pattern2.png);
-  /* background-repeat-x: no-repeat;
-  background-repeat-y: no-repeat;
-  background-size: 100%; */
 }
 
 @media screen and (min-width: 768px) {

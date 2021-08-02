@@ -9,8 +9,11 @@
   --light-2: #f2f2f2;
   --light-3: #f9f9f9;
   --light-4: #ebebeb;
+  --light-5: #f6fbfb;
+  --light-6: #e6f6ee;
   --orange: #feaa5d;
   --success: #81c6c9;
+  --success-2: #00954e;
   --white: #ffffff;
 }
 
@@ -348,6 +351,71 @@ h6 {
   .card.card--auction {
     flex-basis: 18%;
   }
+}
+
+/*
+* How It Works Styles
+*/
+#howItWorks .card.card--how-it-works {
+  flex-direction: row;
+}
+
+#howItWorks .card.card--how-it-works img.img-fluid {
+  max-width: 450px;
+}
+
+@media screen and (min-width: 576px) {
+  #howItWorks .card.card--how-it-works:nth-child(2n + 2) {
+    flex-direction: row-reverse;
+  }
+}
+
+/*
+* Winners Styles
+*/
+#winners {
+  overflow: hidden;
+}
+
+#winners .winners-table-container {
+  overflow-x: auto;
+  width: 100%;
+}
+
+#winners .table.table--winners tr:nth-child(2n + 1) {
+  background: var(--light-5);
+}
+
+#winners .table.table--winners img[alt='Profile Photo'] {
+  max-width: 32px;
+  margin-right: 10px;
+}
+
+#winners .table.table--winners .w_product_img {
+  max-width: 40px;
+  margin-right: 10px;
+}
+
+#winners .tag {
+  padding-right: 10px;
+  padding-left: 10px;
+}
+
+#winners .tag-green {
+  color: var(--success-2);
+  background: var(--light-6);
+  border-radius: 10em;
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 20px;
+  padding: 5px 10px;
+}
+
+/*
+* Terms of Use Styles
+*/
+#termsOfUse p {
+  padding-bottom: 20px;
 }
 
 /*

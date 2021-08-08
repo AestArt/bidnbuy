@@ -1,0 +1,489 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC"
+      crossorigin="anonymous"
+    />
+    <link rel="stylesheet" href="./public/CSS/styles.css" />
+    <title>Orders & Shipping</title>
+  </head>
+  <body>
+    <header>
+      <nav class="navbar navbar-expand-lg py-3">
+        <div class="container">
+          <div class="navbar-menu" id="open">
+            <img
+              src="./public/images/menu.svg"
+              width="35px"
+              alt="..."
+              srcset=""
+            />
+          </div>
+          <a class="navbar-brand" href="./index.html">
+            <img
+              src="./public/images/logo2 -colored.png"
+              class="img-fluid"
+              width="250px"
+            />
+          </a>
+
+          <div class="collapse navbar-collapse">
+            <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+              <li class="nav-item">
+                <a class="nav-link" href="#"
+                  ><img
+                    src="./public/images/search-green.svg"
+                    width="18px"
+                    alt="search"
+                /></a>
+              </li>
+              <li class="nav-item">
+                <a
+                  class="nav-link text-primary text-primary"
+                  href="./auction.html"
+                  >Auctions</a
+                >
+              </li>
+              <li class="nav-item">
+                <a class="nav-link text-primary" href="#">How it works</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link text-primary" href="./winners.html"
+                  >Winner</a
+                >
+              </li>
+              <li class="nav-item" style="border-left: 2px solid #f2f2f2">
+                <a class="nav-link text-secondary" href="#">Login</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link button button-primary px-4" href="#"
+                  >Sign Up</a
+                >
+              </li>
+            </ul>
+          </div>
+
+          <div class="mobile-navbar">
+            <div
+              class="py-3 d-flex justify-content-between"
+              style="border-bottom: 1px solid #f2f2f2"
+            >
+              <img
+                src="./public/images/logo2 -colored.png"
+                class="img-fluid"
+                width="160px"
+              />
+              <span id="close" style="font-size: 35px; cursor: pointer"
+                >&times;</span
+              >
+            </div>
+            <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+              <li class="nav-item"></li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">Auctions</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">How it works</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">Winner</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">Contact Us</a>
+              </li>
+            </ul>
+
+            <div class="sign">
+              <button class="button button-primary w-100 mb-4">Sign Up</button>
+              <button class="button button-outline-primary w-100">Login</button>
+            </div>
+          </div>
+          <div class="side d-lg-none d-sm-flex">
+            <a class="nav-link" href="#"
+              ><img
+                src="./public/images/search_grey.png"
+                width="22px"
+                alt="search"
+            /></a>
+            <a class="nav-link" href="#"
+              ><img
+                src="./public/images/bell_grey.png"
+                width="22px"
+                alt="search"
+            /></a>
+          </div>
+        </div>
+      </nav>
+    </header>
+
+    <section class="pattern_2">
+      <div
+        class="d-flex align-items-center justify-content-center banner_holder"
+      >
+        <div class="text-light">
+          <h1>Orders & Shipping</h1>
+        </div>
+      </div>
+    </section>
+
+    <section class="py-5">
+      <div class="container">
+        <div class="row">
+          <div class="col-md-3 d-none d-md-block">
+            <div class="bg-grey p-3">
+              <ul id="l-nav">
+                <li><a href="#orders">Orders & Shipping</a></li>
+                <li><a href="#safety">Safety Measures</a></li>
+                <li><a href="#returns">Returns</a></li>
+                <li><a href="#exchange">Exchange & Refund</a></li>
+                <li><a href="#cancel">Cancellation</a></li>
+              </ul>
+            </div>
+            <div class="my-3">
+              <img
+                src="./public/images/shipping.jpg"
+                class="img-fluid"
+                alt="shipping"
+              />
+            </div>
+            <div>
+              <img
+                src="./public/images/shipping_2.jpg"
+                class="img-fluid"
+                alt="shipping"
+              />
+            </div>
+          </div>
+          <div class="col-md-9 col-12">
+            <div id="orders">
+              <h4>ORDERS & SHIPPING</h4>
+              <h6>When will my item be shipped?</h6>
+              <p>
+                Although delivery times vary based on your location and the item
+                that was auctioned, we typically ship orders within 3 business
+                days after the item has been paid for. During high volume
+                periods and the rainy season, your order could be delayed by
+                additional days.
+              </p>
+              <h6>Tracking Information</h6>
+              <p>
+                After your item is shipped, we will provide you with tracking
+                information via email. Please check your email for updates on
+                your order and use the tracking number provided to monitor the
+                progress of the shipment and delivery.
+              </p>
+              <h6>Where’s My Item?</h6>
+              <p>
+                We work as quickly as we can to process your order. If you’re
+                wondering why you haven’t received your item, please use the
+                tracking number that was sent to you. Depending on your
+                location, please allow up to 14 days for your order to arrive.
+                If you think your order should have arrived but you haven’t
+                received it, please track your order using the tracking number
+                that was provided to you at the time of shipping. If you can’t
+                view, track or determine the status of your order, you may
+                contact our Customer Service department <a href="#">here</a>.
+              </p>
+              <h6>Items that are lost, stolen or damaged in transit</h6>
+              <p>
+                While we have the utmost trust in our shipping partners, we
+                recognise that in rare cases, an item that has been sent to you
+                may be damaged during transit, lost or stolen. Unfortunately,
+                once an item is shipped to you, the risk of loss or damage
+                shifts away from us to you and Kobobid will not be responsible
+                for any damaged, stolen or lost items.
+              </p>
+              <p>
+                Once notified of your shipment, please use the tracking number
+                that was provided to you to track and monitor the progress of
+                the shipment. Being aware of your expected delivery date might
+                help to mitigate the risk of loss.
+              </p>
+              <p>
+                Any claims for damage that occurred while in transit, loss or
+                theft must be made to our shipping partner. If you experience
+                any issues of damage, loss or theft, please contact us. Our
+                Customer Service and Logistics teams will do their best to
+                assist you with any relevant documentation that may be required
+                to file a claim with our shipping partner.
+              </p>
+            </div>
+            <br />
+            <div id="safety">
+              <h4>SAFETY MEASURES</h4>
+              <p>
+                All our personnel take protective and hygiene measures to
+                deliver your items safely to you, in line with health advice
+                provided by global health agencies in response to the
+                Coronavirus (COVID-19) Pandemic. Because we take these safety
+                measures seriously, we have chosen FedEx as our shipping partner
+                based on their impressive commitment to keep their customers
+                safe during the pandemic. To read more about how FedEx is
+                responding to the pandemic, you may visit their site
+                <a href="https://www.fedex.com/en-ng/coronavirus.html">here.</a>
+              </p>
+            </div>
+            <br />
+            <div id="returns">
+              <h4>RETURNS</h4>
+              <h6>Quality Assurance</h6>
+              <p>
+                We stand behind the quality of the products we offer and want
+                every auction to be a positive experience. If by any chance, the
+                product you received is defective, we will do our best to make
+                it right.
+              </p>
+              <h6>Is there a limitation on initiating a return?</h6>
+              <p>
+                We allow returns and exchanges for certain products within 14
+                days of the delivery date. If no tracking number was assigned at
+                the time of shipping, the item to be returned must be received
+                within 21 days of the shipping date. The eligibility for return
+                will depend on the circumstances and reason for return.
+              </p>
+              <h6>I received a defective product</h6>
+              <p>
+                All of our products are tested and inspected before shipment. If
+                you however, receive a defective product, please
+                <a href="#">contact</a> our customer care team. Defective
+                products that are eligible for return may be returned for either
+                a refund or an exchange.
+              </p>
+              <h6>The wrong item was sent to me</h6>
+              <p>
+                If by some error, we send you the wrong item, colour, size or
+                specification of the product you ordered, the item would be
+                eligible for a refund or exchange.
+              </p>
+              <h6>How do I send my item that is eligible for a return?</h6>
+              <p>
+                If your item is eligible for a return, we will either send you a
+                prepaid shipping label or instructions to drop it off at our
+                facility. Any items being returned to us must be in its original
+                packaging and in new or unused condition. It must also include
+                all parts, accompanying literature (manuals, packaging leaflets,
+                instructions, warranty cards, promotional coupons etc.) and
+                accessories (batteries, chargers, cords, attachments,
+                extensions, etc.).
+              </p>
+              <h6>What happens after Kobobid receives my returned item?</h6>
+              <p>
+                We inspect all returned items to ensure that it is the exact
+                same item that was sent to you and that the item has been
+                returned to us in its original condition. The returned item’s
+                UPC or serial number must match the number we have in our
+                records. Removal or alteration of the product’s UPC or serial
+                number label will automatically void any possibility of refund
+                or exchange. After inspection, if we discover that (a) the
+                numbers are mismatched; or (b) the number has been altered or
+                removed; or (c) the item appears to have been used; or (d) the
+                item’s packaging has been damaged; or (e) some of the item’s
+                parts, literature, accessories or other like accompanying
+                materials is missing, we will void the eligibility for return or
+                refund and return the item to you. If we sent you a shipping
+                label, we will send you an invoice for the refund of the cost of
+                returning the item to us. You will also be responsible for the
+                cost of sending the item back to you.
+              </p>
+            </div>
+            <br />
+            <div id="exchange">
+              <h4>EXCHANGE & REFUNDS</h4>
+              <p>
+                Defective or wrong items may be exchanged/replaced at no
+                additional cost to you. If you choose to receive a refund, only
+                the Final Auction Price paid at checkout will be refunded.
+              </p>
+              <p>
+                Unfortunately, we are unable to refund the shipping fee that was
+                paid to ship the item to you. If your item is eligible for a
+                return because it is defective or because we sent you the wrong
+                item, we will bear the cost of receiving back the item from you
+                and if you desire, sending you a replacement.
+              </p>
+              <p>
+                Your refund will be applied to the original form of payment. We
+                are unable to make refunds to an alternative account. Refunds
+                will be processed after we receive and inspect your returned
+                item. Please allow up to 10 business days to receive your
+                refund. For the avoidance of doubt, please note that bids placed
+                in auctions are not eligible for refunds.
+              </p>
+            </div>
+            <br />
+            <div id="cancel">
+              <h4>CANCELLATION</h4>
+              <p>
+                You may cancel your order at any time before it is processed.
+                Once we process your order, it is no longer eligible for
+                cancellation and will be subject to our Return Policy. If your
+                order is eligible for a cancellation, you will be entitled to a
+                refund of the transaction amount, including the shipping charges
+                but less the applicable payment processing fees. Our payment
+                processor is Flutterwave and you may view their payment
+                processing charges
+                <a href="https://flutterwave.com/ng/pricing" target="_blank"
+                  >here</a
+                >. Please note that any bids used in the auction that led to the
+                order will not be forfeited and cannot be refunded to your
+                account.
+              </p>
+              <h6>When we’re unable to fulfil your order</h6>
+              <p>
+                In the event that we’re unable to fulfil your purchase or
+                auction order, we will provide you with the option to accept an
+                alternative but comparable item. If you decline the alternative
+                item, you will receive a full refund of the transaction amount
+                including all shipping and payment processing charges. In
+                addition, any bids used in that specific auction will be
+                credited back to your account. For the avoidance of doubt, we
+                are unable to refund the cost of the bids purchased and used in
+                that auction.
+              </p>
+              <h6>Suspicious and Fraudulent Activities</h6>
+              <p>
+                We reserve the right to determine that certain customers have
+                engaged in suspicious activity that is aimed at defrauding
+                Kobobid. If you request several returns or cancellations, make
+                several claims for loss/damage/theft or return multiple items to
+                us that do not appear to be in their original condition, we may
+                make the determination that you have engaged in fraudulent
+                activity and your account with us will be terminated. Once
+                terminated, you will be unable to set up a new account with us
+                and your rights upon termination shall be subject to our Terms
+                of Use which can be found
+                <a href="terms-of-service.html">here</a>.
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <footer>
+      <div class="footer">
+        <div class="container">
+          <div class="row justify-content-center">
+            <div class="col-lg-4 col-sm-12 footer-desc pb-4">
+              <div class="footer-logo">
+                <img
+                  src="./public/images/logo_white.png"
+                  class="img-fluid"
+                  width="250px"
+                  alt=""
+                  srcset=""
+                />
+              </div>
+              <p class="my-4">
+                Nigeria's leading online penny auction platform for high quality
+                products and offerings to help you afford your best life.
+              </p>
+              <div class="social-links pb-4">
+                <span
+                  ><img
+                    src="./public/images/facebook.svg"
+                    width="30px"
+                    class="img-fluid"
+                /></span>
+                <span
+                  ><img
+                    src="./public/images/twitter.svg"
+                    width="37px"
+                    class="img-fluid"
+                /></span>
+                <span
+                  ><img
+                    src="./public/images/instagram.svg"
+                    width="37px"
+                    class="img-fluid"
+                /></span>
+                <span
+                  ><img
+                    src="./public/images/snapchat.svg"
+                    width="37px"
+                    class="img-fluid"
+                /></span>
+                <span
+                  ><img
+                    src="./public/images/tiktok.svg"
+                    width="37px"
+                    class="img-fluid"
+                /></span>
+              </div>
+              <div class="cta">
+                <div class="button button-light px-4 me-3 shadow">Login</div>
+                <div class="button button-secondary px-4 me-3 shadow">
+                  Sign Up
+                </div>
+              </div>
+            </div>
+            <div class="col-lg-8 col-sm-12 row">
+              <div class="ql col-lg-4 col-md-4 col-12">
+                <ul class="mb-4">
+                  <h5>Information</h5>
+                  <li><a href="./terms-of-service.html">Terms of use</a></li>
+                  <li><a href="./privacy-policy.html">Privacy Policy</a></li>
+                  <li><a href="#">Partership</a></li>
+                  <li><a href="#">Sitemap</a></li>
+                </ul>
+              </div>
+              <div class="ql col-lg-4 col-md-4 col-12">
+                <ul class="mb-4">
+                  <h5>Help</h5>
+                  <li><a href="./faqs.html">FAQs</a></li>
+                  <li><a href="#">How Kobobid Works</a></li>
+                  <li>
+                    <a href="./what-is-bidpack.html">What Is a BidPack?</a>
+                  </li>
+                  <li>
+                    <a href="./tips-and-features.html">Tips & Features</a>
+                  </li>
+                  <li>
+                    <a href="./kobobid-penny-auctions.html"
+                      >Kobo Auctions vs. eBay</a
+                    >
+                  </li>
+                  <li>
+                    <a href="./orders-and-shipping.html">Orders & Shipping</a>
+                  </li>
+                  <li><a href="#">Payments</a></li>
+                </ul>
+              </div>
+              <div class="ql col-lg-4 col-md-4 col-12">
+                <ul>
+                  <h5 class="mb-4">About Us</h5>
+                  <li><a href="./about-kobobid.html">About Kobobid</a></li>
+                  <li>
+                    <a href="./kobobid-promise.html">The Kobobid Promise</a>
+                  </li>
+                  <li><a href="#">Kobo Blog</a></li>
+                  <li><a href="#">Contact Us</a></li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="pb-5 text-center">
+        <img src="./public/images/logo1.png" width="90px" alt="..." />
+        <img src="./public/images/logo3.png" width="90px" alt="..." />
+        <img src="./public/images/logo2.png" width="90px" alt="..." />
+      </div>
+      <p class="m-0 pb-3 copyright">
+        ICONE BIDS NIG LTD. © 2021 ALL RIGHTS RESERVED
+      </p>
+    </footer>
+    <script src="./public/js/main.js"></script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.min.js"
+      integrity="sha384-cVKIPhGWiC2Al4u+LWgxfKTRIcfu0JTxR+EQDz/bgldoEyl4H0zUF0QKbrJ0EcQF"
+      crossorigin="anonymous"
+    ></script>
+  </body>
+</html>

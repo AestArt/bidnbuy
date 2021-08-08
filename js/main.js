@@ -4,7 +4,7 @@
 window.addEventListener('load', () => null);
 
 window.addEventListener('offline', () =>
-  showToast(store.lib.toasts.connection),
+  showToast(store.lib.toasts.connection)
 );
 
 window.addEventListener('online', () => hideToast(store.lib.toasts.connection));

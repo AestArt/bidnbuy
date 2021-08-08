@@ -11,9 +11,9 @@ const store = {
     toasts: {
       connection: newToast('#connectionToast', false),
       resErr: newToast('#responseErrorToast'),
-      resSuc: newToast('#responseSuccessToast'),
-    },
-  },
+      resSuc: newToast('#responseSuccessToast')
+    }
+  }
 };
 
 /**
@@ -23,8 +23,8 @@ const store = {
  * @return {store}
  */
 const getStore = (
-    secret = 'bidnbuy',
-    localStore = window.localStorage.getItem(secret),
+  secret = 'bidnbuy',
+  localStore = window.localStorage.getItem(secret)
 ) => (localStore ? JSON.parse(localStore) : {});
 
 /**
@@ -35,6 +35,6 @@ const getStore = (
  */
 const setStore = (update, secret = 'bidnbuy', gStore = getStore) => {
   const s = gStore();
-  localStorage.setItem(secret, JSON.stringify({...s, ...update}));
+  localStorage.setItem(secret, JSON.stringify({ ...s, ...update }));
   console.log(gStore());
 };

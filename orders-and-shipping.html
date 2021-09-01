@@ -1,136 +1,225 @@
 <!DOCTYPE html>
-<html lang="en">
+<html class="no-js" lang="en">
   <head>
-    <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link
-      href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css"
-      rel="stylesheet"
-      integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC"
-      crossorigin="anonymous"
+    <meta charset="utf-8" />
+
+    <title>Orders & Shipping | Bidnbuy</title>
+    <meta
+      name="description"
+      content="By accepting these Terms, you agree that all content presented to you on this Site is protected by any and all intellectual property."
     />
-    <link rel="stylesheet" href="./public/CSS/styles.css" />
-    <title>Orders & Shipping</title>
+    <meta name="robots" content="index,follow" />
+    <meta property="fb:page_id" content="" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <!--
+      Give name for pinning site to Taskbar on WIndows.
+    -->
+    <meta name="application-name" content="Bidnbuy" />
+    <!--
+      Give site tooltip for pinning
+    -->
+    <meta name="msapplication-tooltip" content="Bidnbuy" />
+    <meta name="msapplication-TileColor" content="#81c6c9" />
+    <!-- Make it possible to pin app on mobile -->
+    <meta name="mobile-web-app-capable" content="yes" />
+    <!-- Get Site to look like app on iOS  -->
+    <meta name="apple-mobile-web-app-capable" content="yes" />
+    <meta name="apple-mobile-web-app-status-bar-style" content="#81c6c9" />
+    <!--
+      Add Title for when site is pinned to iOS screen
+    -->
+    <meta name="apple-mobile-web-app-title" content="Bidnbuy" />
+    <meta name="theme-color" content="#81c6c9" />
+
+    <!--
+      Add icon for when pinned to iOS & any other mobile
+     -->
+    <link rel="icon" sizes="192x192" href="images/logo192.png" />
+    <link rel="icon" sizes="128x128" href="images/logo128.png" />
+    <link rel="icon" sizes="64x64" href="images/logo64.png" />
+    <link rel="icon" sizes="32x32" href="images/logo32.png" />
+    <link rel="icon" sizes="16x16" href="images/logo16.png" />
+    <link rel="apple-touch-icon" href="images/logo512.png" />
+    <!--
+      Display certain image when site is loaded as app on iOS
+     -->
+    <link
+      rel="apple-touch-startup-image"
+      media="(max-width: 480px) and (-webkit-min-device-pixel-ratio: 2)"
+      href="images/logo512.png"
+    />
+    <link rel="manifest" href="site.webmanifest" />
+
+    <!--
+      DNS Prefetching: prefetches the site that is included in the href
+    -->
+    <link rel="dns-prefetch" href="//ka-f.fontawesome.com" />
   </head>
-  <body>
-    <header>
-      <nav class="navbar navbar-expand-lg py-3">
+
+  <body style="background: #ffffff">
+    <!-- Document Header -->
+    <header class="fixed-top text-gray" id="header">
+      <nav class="navbar navbar-expand-xl" aria-label="main navigation">
         <div class="container">
-          <div class="navbar-menu" id="open">
-            <img
-              src="./public/images/menu.svg"
-              width="35px"
-              alt="..."
-              srcset=""
-            />
-          </div>
-          <a class="navbar-brand" href="./index.html">
-            <img
-              src="./public/images/logo2 -colored.png"
-              class="img-fluid"
-              width="250px"
+          <button
+            class="navbar-toggler navbar-toggler--custom"
+            type="button"
+            data-bs-toggle="collapse"
+            data-bs-target="#navbarSupportedContent"
+            aria-controls="navbarSupportedContent"
+            aria-expanded="false"
+            aria-label="Toggle navigation"
+          >
+            <span class="navbar-toggler-icon"
+              ><span class="fas fa-bars fs-2 text-gray"></span>
+            </span>
+          </button>
+          <a class="navbar-brand" href="/"
+            ><img
+              src="images/logo-white.png"
+              alt="bidnbuy"
+              class="d-none img--navbar-brand"
+            /><img
+              src="images/logo-success.png"
+              alt="bidnbuy"
+              class="img--navbar-brand"
             />
           </a>
+          <ul class="nav d-xl-none ms-auto">
+            <li class="nav-item" onclick="toggleSearch()">
+              <a class="nav-link nav-link--header" href="#"
+                ><span class="fas fa-search fs-2"></span>
+              </a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link nav-link--header" href="#"
+                ><span class="fas fa-bell fs-2"></span>
+              </a>
+            </li>
+          </ul>
 
-          <div class="collapse navbar-collapse">
-            <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
-              <li class="nav-item">
-                <a class="nav-link" href="#"
-                  ><img
-                    src="./public/images/search-green.svg"
-                    width="18px"
-                    alt="search"
-                /></a>
-              </li>
-              <li class="nav-item">
+          <div
+            class="
+              collapse
+              navbar-collapse
+              justify-content-end
+              align-items-center
+              text-uppercase text-gray
+            "
+            id="navbarSupportedContent"
+          >
+            <div
+              class="
+                d-flex d-xl-none
+                justify-content-between
+                align-items-center
+                mb-4
+              "
+            >
+              <a class="navbar-brand" href="/"
+                ><img
+                  src="images/logo-white.png"
+                  alt="bidnbuy"
+                  class="d-none img--navbar-brand"
+                /><img
+                  src="images/logo-success.png"
+                  alt="bidnbuy"
+                  class="img--navbar-brand"
+                />
+              </a>
+
+              <span
+                class="fas fa-times fs-3 pointer"
+                data-bs-toggle="collapse"
+                data-bs-target="#navbarSupportedContent"
+                aria-controls="navbarSupportedContent"
+                aria-expanded="false"
+                aria-label="Toggle navigation"
+              ></span>
+            </div>
+            <ul class="navbar-nav navbar-nav--header mb-2 mb-xl-0 mt-xl-1">
+              <li class="nav-item nav-item--header d-none d-xl-block">
                 <a
-                  class="nav-link text-primary text-primary"
-                  href="./auction.html"
+                  class="nav-link nav-link--header py-xl-0 my-1 my-xl-0 mx-2"
+                  href="#"
+                  onclick="toggleSearch()"
+                >
+                  <span class="fas fa-search"></span>
+                  <span class="d-none">Search</span>
+                </a>
+              </li>
+              <li class="nav-item nav-item--header">
+                <a
+                  class="nav-link nav-link--header py-xl-0 my-1 my-xl-0 mx-2"
+                  href="auctions.html"
                   >Auctions</a
                 >
               </li>
-              <li class="nav-item">
-                <a class="nav-link text-primary" href="#">How it works</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link text-primary" href="./winners.html"
-                  >Winner</a
+              <li class="nav-item nav-item--header">
+                <a
+                  class="nav-link nav-link--header py-xl-0 my-1 my-xl-0 mx-2"
+                  href="how-it-works.html"
+                  >How It Works</a
                 >
               </li>
-              <li class="nav-item" style="border-left: 2px solid #f2f2f2">
-                <a class="nav-link text-secondary" href="#">Login</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link button button-primary px-4" href="#"
-                  >Sign Up</a
+              <li class="nav-item nav-item--header">
+                <a
+                  class="nav-link nav-link--header py-xl-0 my-1 my-xl-0 mx-2"
+                  href="winners.html"
+                  >Winners</a
                 >
               </li>
             </ul>
-          </div>
-
-          <div class="mobile-navbar">
-            <div
-              class="py-3 d-flex justify-content-between"
-              style="border-bottom: 1px solid #f2f2f2"
-            >
-              <img
-                src="./public/images/logo2 -colored.png"
-                class="img-fluid"
-                width="160px"
-              />
-              <span id="close" style="font-size: 35px; cursor: pointer"
-                >&times;</span
+            <form class="form form--search">
+              <div class="input-group">
+                <input
+                  class="form-control form-control--custom me-2 py-2"
+                  type="search"
+                  placeholder="Search auctions"
+                  aria-label="Search"
+                />
+                <span
+                  class="input-group-text border-0 bg-transparent pointer"
+                  id="search-icon"
+                >
+                  <span class="fas fa-search text-secondary"></span>
+                </span>
+              </div>
+              <button
+                class="btn shadow-none"
+                type="button"
+                onclick="toggleSearch()"
               >
-            </div>
-            <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
-              <li class="nav-item"></li>
-              <li class="nav-item">
-                <a class="nav-link" href="#">Auctions</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link" href="#">How it works</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link" href="#">Winner</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link" href="#">Contact Us</a>
-              </li>
-            </ul>
+                Cancel
+              </button>
+            </form>
 
-            <div class="sign">
-              <button class="button button-primary w-100 mb-4">Sign Up</button>
-              <button class="button button-outline-primary w-100">Login</button>
-            </div>
-          </div>
-          <div class="side d-lg-none d-sm-flex">
-            <a class="nav-link" href="#"
-              ><img
-                src="./public/images/search_grey.png"
-                width="22px"
-                alt="search"
-            /></a>
-            <a class="nav-link" href="#"
-              ><img
-                src="./public/images/bell_grey.png"
-                width="22px"
-                alt="search"
-            /></a>
+            <form class="ms-2 form form--buttons my-0">
+              <a class="btn" type="button" href="login.html"> login </a>
+              <a
+                class="btn btn-success btn-success--custom"
+                type="button"
+                href="register.html"
+              >
+                register
+              </a>
+            </form>
           </div>
         </div>
       </nav>
     </header>
 
-    <section class="pattern_2">
-      <div
-        class="d-flex align-items-center justify-content-center banner_holder"
-      >
-        <div class="text-light">
-          <h1>Orders & Shipping</h1>
-        </div>
-      </div>
-    </section>
+    <!-- Document Main Content -->
+    <main class="main-content main-content--no-padding mb-5">
+      <section class="container-fluid">
+        <article class="row">
+          <div class="col-12 bg-pattern-2 p-5 text-center text-white">
+            <h1 class="display-4">Orders & Shipping</h1>
+          </div>
+        </article>
+      </section>
+    </main>
 
     <section class="py-5">
       <div class="container">
@@ -366,124 +455,201 @@
       </div>
     </section>
 
-    <footer>
-      <div class="footer">
-        <div class="container">
-          <div class="row justify-content-center">
-            <div class="col-lg-4 col-sm-12 footer-desc pb-4">
-              <div class="footer-logo">
-                <img
-                  src="./public/images/logo_white.png"
-                  class="img-fluid"
-                  width="250px"
-                  alt=""
-                  srcset=""
-                />
-              </div>
-              <p class="my-4">
-                Nigeria's leading online penny auction platform for high quality
-                products and offerings to help you afford your best life.
-              </p>
-              <div class="social-links pb-4">
-                <span
-                  ><img
-                    src="./public/images/facebook.svg"
-                    width="30px"
-                    class="img-fluid"
-                /></span>
-                <span
-                  ><img
-                    src="./public/images/twitter.svg"
-                    width="37px"
-                    class="img-fluid"
-                /></span>
-                <span
-                  ><img
-                    src="./public/images/instagram.svg"
-                    width="37px"
-                    class="img-fluid"
-                /></span>
-                <span
-                  ><img
-                    src="./public/images/snapchat.svg"
-                    width="37px"
-                    class="img-fluid"
-                /></span>
-                <span
-                  ><img
-                    src="./public/images/tiktok.svg"
-                    width="37px"
-                    class="img-fluid"
-                /></span>
-              </div>
-              <div class="cta">
-                <div class="button button-light px-4 me-3 shadow">Login</div>
-                <div class="button button-secondary px-4 me-3 shadow">
-                  Sign Up
-                </div>
-              </div>
+    <!-- Document Footer -->
+    <footer id="footer">
+      <div class="container">
+        <div class="row py-5">
+          <div class="col-12 col-sm-6 col-lg-3">
+            <a href="\"
+              ><img
+                src="images/logo-white.png"
+                class="img--navbar-brand"
+                alt="kobobid logo"
+            /></a>
+            <p class="text-white my-3">
+              Nigeria's leading online penny auction platform for high quality
+              products and offerings to help you afford your best life.
+            </p>
+            <ul class="nav px-0">
+              <li class="nav-item">
+                <a class="nav-link text-white" aria-current="page" href="#">
+                  <span class="fab fa-facebook-f"></span>
+                  <span class="d-none">Facebook</span>
+                </a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link text-white" href="#">
+                  <span class="fab fa-twitter"></span>
+                  <span class="d-none">twitter</span></a
+                >
+              </li>
+              <li class="nav-item">
+                <a class="nav-link text-white" href="#">
+                  <span class="fab fa-instagram"></span>
+                  <span class="d-none">Instagram</span></a
+                >
+              </li>
+              <li class="nav-item">
+                <a class="nav-link text-white" href="#">
+                  <span class="fab fa-snapchat-ghost"></span>
+                  <span class="d-none">snapchat</span></a
+                >
+              </li>
+            </ul>
+            <div class="btn-group my-4">
+              <a class="btn bg-white text-uppercase me-3" href="./login.html"
+                >login</a
+              >
+              <a class="btn btn-orange text-uppercase" href="./register.html"
+                >register</a
+              >
             </div>
-            <div class="col-lg-8 col-sm-12 row">
-              <div class="ql col-lg-4 col-md-4 col-12">
-                <ul class="mb-4">
-                  <h5>Information</h5>
-                  <li><a href="./terms-of-service.html">Terms of use</a></li>
-                  <li><a href="./privacy-policy.html">Privacy Policy</a></li>
-                  <li><a href="#">Partership</a></li>
-                  <li><a href="#">Sitemap</a></li>
-                </ul>
-              </div>
-              <div class="ql col-lg-4 col-md-4 col-12">
-                <ul class="mb-4">
-                  <h5>Help</h5>
-                  <li><a href="./faqs.html">FAQs</a></li>
-                  <li><a href="#">How Kobobid Works</a></li>
-                  <li>
-                    <a href="./what-is-bidpack.html">What Is a BidPack?</a>
-                  </li>
-                  <li>
-                    <a href="./tips-and-features.html">Tips & Features</a>
-                  </li>
-                  <li>
-                    <a href="./kobobid-penny-auctions.html"
-                      >Kobo Auctions vs. eBay</a
-                    >
-                  </li>
-                  <li>
-                    <a href="./orders-and-shipping.html">Orders & Shipping</a>
-                  </li>
-                  <li><a href="#">Payments</a></li>
-                </ul>
-              </div>
-              <div class="ql col-lg-4 col-md-4 col-12">
-                <ul>
-                  <h5 class="mb-4">About Us</h5>
-                  <li><a href="./about-kobobid.html">About Kobobid</a></li>
-                  <li>
-                    <a href="./kobobid-promise.html">The Kobobid Promise</a>
-                  </li>
-                  <li><a href="#">Kobo Blog</a></li>
-                  <li><a href="#">Contact Us</a></li>
-                </ul>
-              </div>
-            </div>
+          </div>
+          <div class="col-12 col-sm-6 col-lg-3">
+            <h4 class="text-white text-uppercase mb-4">information</h4>
+            <nav class="nav flex-column" aria-label="information">
+              <a class="nav-link text-white ps-0" href="terms.html"
+                >Terms of Use</a
+              >
+              <a class="nav-link text-white ps-0" href="privacy-policy.html"
+                >Privacy Policy</a
+              >
+              <a class="nav-link text-white ps-0" href="partnerships.html"
+                >Partnerships</a
+              >
+              <a class="nav-link text-white ps-0" href="sitemap.html"
+                >Sitemap</a
+              >
+            </nav>
+          </div>
+          <div class="col-12 col-sm-6 col-lg-3">
+            <h4 class="text-white text-uppercase mb-4">help</h4>
+            <nav class="nav flex-column" aria-label="information">
+              <a class="nav-link text-white ps-0" href="faqs.html">FAQs</a>
+              <a class="nav-link text-white ps-0" href="how-it-works.html"
+                >How Kobobid Works</a
+              >
+              <a class="nav-link text-white ps-0" href="what-is-bidpack.html"
+                >What Is a BidPack?</a
+              >
+              <a class="nav-link text-white ps-0" href="tips-and-features.html"
+                >Tips & Features</a
+              >
+              <a
+                class="nav-link text-white ps-0"
+                href="kobobid-penny-auction.html"
+                >Kobo Auctions vs. eBay</a
+              >
+              <a
+                class="nav-link text-white ps-0"
+                href="orders-and-shipping.html"
+                >Orders & Shipping</a
+              >
+              <a class="nav-link text-white ps-0" href="payments.html"
+                >Payments</a
+              >
+            </nav>
+          </div>
+          <div class="col-12 col-sm-6 col-lg-3">
+            <h4 class="text-white ps-0 text-uppercase mb-4">about us</h4>
+            <nav class="nav flex-column" aria-label="information">
+              <a class="nav-link text-white ps-0" href="about.html"
+                >About Kobobid</a
+              >
+              <a class="nav-link text-white ps-0" href="kobobid-promise.html"
+                >The Kobobid Promise</a
+              >
+              <a class="nav-link text-white ps-0" href="blog.html">Kobo Blog</a>
+              <a class="nav-link text-white ps-0" href="contact-us.html"
+                >Contact Us</a
+              >
+            </nav>
+          </div>
+        </div>
+        <div class="row p-5">
+          <div class="col-12 text-center">
+            <img
+              style="max-width: 90px; height: auto; width: 100%"
+              src="https://cdn.kobobid.com/web/logo1.png"
+              alt="Institute of Auctioneers"
+            />
+            <img
+              style="max-width: 90px; height: auto; width: 100%"
+              src="https://cdn.kobobid.com/web/logo3.png"
+              alt="National Lottery"
+            />
+            <img
+              style="max-width: 90px; height: auto; width: 100%"
+              src="https://cdn.kobobid.com/web/logo2.png"
+              alt="Keystone Bank"
+            />
+          </div>
+        </div>
+        <div
+          class="
+            row
+            text-white text-center
+            p-3
+            border border-white border-bottom-0 border-start-0 border-end-0
+          "
+        >
+          <div class="col">
+            <p>ICONE BIDS NIG LTD. © 2021 ALL RIGHTS RESERVED</p>
           </div>
         </div>
       </div>
-      <div class="pb-5 text-center">
-        <img src="./public/images/logo1.png" width="90px" alt="..." />
-        <img src="./public/images/logo3.png" width="90px" alt="..." />
-        <img src="./public/images/logo2.png" width="90px" alt="..." />
-      </div>
-      <p class="m-0 pb-3 copyright">
-        ICONE BIDS NIG LTD. © 2021 ALL RIGHTS RESERVED
-      </p>
     </footer>
-    <script src="./public/js/main.js"></script>
-    <script
-      src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.min.js"
-      integrity="sha384-cVKIPhGWiC2Al4u+LWgxfKTRIcfu0JTxR+EQDz/bgldoEyl4H0zUF0QKbrJ0EcQF"
-      crossorigin="anonymous"
-    ></script>
+
+    <!-- ! Load JavaScript files -->
+    <script src="js/vendor/bootstrap.bundle.min.js" defer></script>
+    <script src="js/vendor/fontawesome.min.js" defer></script>
+    <script src="js/vendor/plugins.min.js" defer></script>
+    <script src="js/utils.min.js" defer></script>
+    <script src="js/toast.min.js" defer></script>
+    <script src="js/store.min.js" defer></script>
+    <script src="js/header.min.js" defer></script>
+    <script src="js/main.min.js" defer></script>
+
+    <!--
+        !Service Worker
+       -->
+    <script>
+      // ServiceWorker is a progressive technology. Ignore unsupported browsers
+      if ('serviceWorker' in navigator) {
+        window.addEventListener('load', () =>
+          navigator.serviceWorker.register('sw.js')
+        );
+      }
+    </script>
+
+    <!--
+        ! Load CSS files
+       -->
+    <noscript id="deferred-styles">
+      <link rel="stylesheet" href="css/vendor/animate.min.css" />
+      <link rel="stylesheet" href="css/vendor/bootstrap.min.css" />
+      <link rel="stylesheet" href="css/font.min.css" />
+      <link rel="stylesheet" href="css/main.min.css" />
+      <link rel="stylesheet" href="css/app.min.css" />
+    </noscript>
+    <script>
+      var loadDeferredStyles = function () {
+        var addStylesNode = document.getElementById('deferred-styles');
+        var replacement = document.createElement('div');
+        replacement.innerHTML = addStylesNode.textContent;
+        document.body.appendChild(replacement);
+        addStylesNode.parentElement.removeChild(addStylesNode);
+      };
+      var raf =
+        window.requestAnimationFrame ||
+        window.mozRequestAnimationFrame ||
+        window.webkitRequestAnimationFrame ||
+        window.msRequestAnimationFrame;
+      if (raf)
+        raf(function () {
+          window.setTimeout(loadDeferredStyles, 0);
+        });
+      else window.addEventListener('load', loadDeferredStyles);
+    </script>
   </body>
 </html>

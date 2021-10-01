@@ -14,72 +14,25 @@ const Header = () => {
     else showNav(false);
   };
 
-  const scrollHeader = () => {
-    if (window.scrollY >= 80) setScroll(true);
-    else setScroll(false);
-  };
+  // const scrollHeader = () => {
+  //   if (window.scrollY >= 80) setScroll(true);
+  //   else setScroll(false);
+  // };
 
   useEffect(() => {
-    if(!nav){
-      setClick(false)
+    if (!nav) {
+      setClick(false);
     }
-    scrollHeader();
+    // scrollHeader();
     showButton();
   }, [nav]);
 
-  window.addEventListener('scroll', scrollHeader);
+  // window.addEventListener('scroll', scrollHeader);
   window.addEventListener('resize', showButton);
 
   return (
     <header className={!scroll ? 'header' : 'header scroll-header'}>
       <div className='container'>
-        {/********** Two section nav ************/}
-
-        {/* <nav>
-          <a href='/#' className='nav-logo'>
-            BidnBuy
-          </a>
-
-          {!nav ? (
-            <>
-              <ul className='nav-list'>
-                <li>
-                  <a href='#home' className='nav-links'>
-                    <span>Bids</span>
-                  </a>
-                </li>
-
-                <li>
-                  <a href='#skills' className='nav-links'>
-                    <span>Winners</span>
-                  </a>
-                </li>
-
-                <li>
-                  <i className='fas fa-search nav-links'></i>
-                </li>
-              </ul>
-              <ul className='nav-list'>
-                <li>
-                  <a href='#login' className='nav-links'>
-                    <span className='button button-primary'>Login</span>
-                  </a>
-                </li>
-
-                <li>
-                  <a href='#register' className='nav-links'>
-                    <span className='button button-secondary'>Sign Up</span>
-                  </a>
-                </li>
-              </ul>
-            </>
-          ) : !click ? (
-            <i className='fas fa-bars' onClick={handleClick}></i>
-          ) : (
-            <i className='fas fa-times' onClick={handleClick}></i>
-          )}
-        </nav> */}
-
         <nav>
           {nav &&
             (!click ? (

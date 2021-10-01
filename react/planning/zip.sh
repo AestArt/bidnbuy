@@ -1,4 +1,4 @@
 cd ..
-zip -r pwa.zip pwa
-mv pwa.zip pwa/pwa.zip
-cd pwa
+zip -r bidnbuy.zip bidnbuy
+mv bidnbuy.zip bidnbuy/bidnbuy.zip
+cd bidnbuy

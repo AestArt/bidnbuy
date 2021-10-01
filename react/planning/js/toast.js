@@ -10,7 +10,7 @@
  * @return {toast}
  */
 const newToast = (qS, autohide = true, elem = selElem(qS)) =>
-  new bootstrap.Toast(elem, {autohide});
+  new bootstrap.Toast(elem, { autohide });
 
 /**
  * Shows toast as well as set message
@@ -19,9 +19,9 @@ const newToast = (qS, autohide = true, elem = selElem(qS)) =>
  * @param {Element} [tElem]
  */
 const showToast = (
-    toast,
-    message,
-    tElem = selElem('.toast-body', toast._element),
+  toast,
+  message,
+  tElem = selElem('.toast-body', toast._element)
 ) => {
   if (message) tElem.innerHTML = message;
 

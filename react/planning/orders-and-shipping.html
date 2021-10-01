@@ -1,0 +1,655 @@
+<!DOCTYPE html>
+<html class="no-js" lang="en">
+  <head>
+    <meta charset="utf-8" />
+
+    <title>Orders & Shipping | Bidnbuy</title>
+    <meta
+      name="description"
+      content="By accepting these Terms, you agree that all content presented to you on this Site is protected by any and all intellectual property."
+    />
+    <meta name="robots" content="index,follow" />
+    <meta property="fb:page_id" content="" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <!--
+      Give name for pinning site to Taskbar on WIndows.
+    -->
+    <meta name="application-name" content="Bidnbuy" />
+    <!--
+      Give site tooltip for pinning
+    -->
+    <meta name="msapplication-tooltip" content="Bidnbuy" />
+    <meta name="msapplication-TileColor" content="#81c6c9" />
+    <!-- Make it possible to pin app on mobile -->
+    <meta name="mobile-web-app-capable" content="yes" />
+    <!-- Get Site to look like app on iOS  -->
+    <meta name="apple-mobile-web-app-capable" content="yes" />
+    <meta name="apple-mobile-web-app-status-bar-style" content="#81c6c9" />
+    <!--
+      Add Title for when site is pinned to iOS screen
+    -->
+    <meta name="apple-mobile-web-app-title" content="Bidnbuy" />
+    <meta name="theme-color" content="#81c6c9" />
+
+    <!--
+      Add icon for when pinned to iOS & any other mobile
+     -->
+    <link rel="icon" sizes="192x192" href="images/logo192.png" />
+    <link rel="icon" sizes="128x128" href="images/logo128.png" />
+    <link rel="icon" sizes="64x64" href="images/logo64.png" />
+    <link rel="icon" sizes="32x32" href="images/logo32.png" />
+    <link rel="icon" sizes="16x16" href="images/logo16.png" />
+    <link rel="apple-touch-icon" href="images/logo512.png" />
+    <!--
+      Display certain image when site is loaded as app on iOS
+     -->
+    <link
+      rel="apple-touch-startup-image"
+      media="(max-width: 480px) and (-webkit-min-device-pixel-ratio: 2)"
+      href="images/logo512.png"
+    />
+    <link rel="manifest" href="site.webmanifest" />
+
+    <!--
+      DNS Prefetching: prefetches the site that is included in the href
+    -->
+    <link rel="dns-prefetch" href="//ka-f.fontawesome.com" />
+  </head>
+
+  <body style="background: #ffffff">
+    <!-- Document Header -->
+    <header class="fixed-top text-gray" id="header">
+      <nav class="navbar navbar-expand-xl" aria-label="main navigation">
+        <div class="container">
+          <button
+            class="navbar-toggler navbar-toggler--custom"
+            type="button"
+            data-bs-toggle="collapse"
+            data-bs-target="#navbarSupportedContent"
+            aria-controls="navbarSupportedContent"
+            aria-expanded="false"
+            aria-label="Toggle navigation"
+          >
+            <span class="navbar-toggler-icon"
+              ><span class="fas fa-bars fs-2 text-gray"></span>
+            </span>
+          </button>
+          <a class="navbar-brand" href="/"
+            ><img
+              src="images/logo-white.png"
+              alt="bidnbuy"
+              class="d-none img--navbar-brand"
+            /><img
+              src="images/logo-success.png"
+              alt="bidnbuy"
+              class="img--navbar-brand"
+            />
+          </a>
+          <ul class="nav d-xl-none ms-auto">
+            <li class="nav-item" onclick="toggleSearch()">
+              <a class="nav-link nav-link--header" href="#"
+                ><span class="fas fa-search fs-2"></span>
+              </a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link nav-link--header" href="#"
+                ><span class="fas fa-bell fs-2"></span>
+              </a>
+            </li>
+          </ul>
+
+          <div
+            class="
+              collapse
+              navbar-collapse
+              justify-content-end
+              align-items-center
+              text-uppercase text-gray
+            "
+            id="navbarSupportedContent"
+          >
+            <div
+              class="
+                d-flex d-xl-none
+                justify-content-between
+                align-items-center
+                mb-4
+              "
+            >
+              <a class="navbar-brand" href="/"
+                ><img
+                  src="images/logo-white.png"
+                  alt="bidnbuy"
+                  class="d-none img--navbar-brand"
+                /><img
+                  src="images/logo-success.png"
+                  alt="bidnbuy"
+                  class="img--navbar-brand"
+                />
+              </a>
+
+              <span
+                class="fas fa-times fs-3 pointer"
+                data-bs-toggle="collapse"
+                data-bs-target="#navbarSupportedContent"
+                aria-controls="navbarSupportedContent"
+                aria-expanded="false"
+                aria-label="Toggle navigation"
+              ></span>
+            </div>
+            <ul class="navbar-nav navbar-nav--header mb-2 mb-xl-0 mt-xl-1">
+              <li class="nav-item nav-item--header d-none d-xl-block">
+                <a
+                  class="nav-link nav-link--header py-xl-0 my-1 my-xl-0 mx-2"
+                  href="#"
+                  onclick="toggleSearch()"
+                >
+                  <span class="fas fa-search"></span>
+                  <span class="d-none">Search</span>
+                </a>
+              </li>
+              <li class="nav-item nav-item--header">
+                <a
+                  class="nav-link nav-link--header py-xl-0 my-1 my-xl-0 mx-2"
+                  href="auctions.html"
+                  >Auctions</a
+                >
+              </li>
+              <li class="nav-item nav-item--header">
+                <a
+                  class="nav-link nav-link--header py-xl-0 my-1 my-xl-0 mx-2"
+                  href="how-it-works.html"
+                  >How It Works</a
+                >
+              </li>
+              <li class="nav-item nav-item--header">
+                <a
+                  class="nav-link nav-link--header py-xl-0 my-1 my-xl-0 mx-2"
+                  href="winners.html"
+                  >Winners</a
+                >
+              </li>
+            </ul>
+            <form class="form form--search">
+              <div class="input-group">
+                <input
+                  class="form-control form-control--custom me-2 py-2"
+                  type="search"
+                  placeholder="Search auctions"
+                  aria-label="Search"
+                />
+                <span
+                  class="input-group-text border-0 bg-transparent pointer"
+                  id="search-icon"
+                >
+                  <span class="fas fa-search text-secondary"></span>
+                </span>
+              </div>
+              <button
+                class="btn shadow-none"
+                type="button"
+                onclick="toggleSearch()"
+              >
+                Cancel
+              </button>
+            </form>
+
+            <form class="ms-2 form form--buttons my-0">
+              <a class="btn" type="button" href="login.html"> login </a>
+              <a
+                class="btn btn-success btn-success--custom"
+                type="button"
+                href="register.html"
+              >
+                register
+              </a>
+            </form>
+          </div>
+        </div>
+      </nav>
+    </header>
+
+    <!-- Document Main Content -->
+    <main class="main-content main-content--no-padding mb-5">
+      <section class="container-fluid">
+        <article class="row">
+          <div class="col-12 bg-pattern-2 p-5 text-center text-white">
+            <h1 class="display-4">Orders & Shipping</h1>
+          </div>
+        </article>
+      </section>
+    </main>
+
+    <section class="py-5">
+      <div class="container">
+        <div class="row">
+          <div class="col-md-3 d-none d-md-block">
+            <div class="bg-grey p-3">
+              <ul id="l-nav">
+                <li><a href="#orders">Orders & Shipping</a></li>
+                <li><a href="#safety">Safety Measures</a></li>
+                <li><a href="#returns">Returns</a></li>
+                <li><a href="#exchange">Exchange & Refund</a></li>
+                <li><a href="#cancel">Cancellation</a></li>
+              </ul>
+            </div>
+            <div class="my-3">
+              <img
+                src="./public/images/shipping.jpg"
+                class="img-fluid"
+                alt="shipping"
+              />
+            </div>
+            <div>
+              <img
+                src="./public/images/shipping_2.jpg"
+                class="img-fluid"
+                alt="shipping"
+              />
+            </div>
+          </div>
+          <div class="col-md-9 col-12">
+            <div id="orders">
+              <h4>ORDERS & SHIPPING</h4>
+              <h6>When will my item be shipped?</h6>
+              <p>
+                Although delivery times vary based on your location and the item
+                that was auctioned, we typically ship orders within 3 business
+                days after the item has been paid for. During high volume
+                periods and the rainy season, your order could be delayed by
+                additional days.
+              </p>
+              <h6>Tracking Information</h6>
+              <p>
+                After your item is shipped, we will provide you with tracking
+                information via email. Please check your email for updates on
+                your order and use the tracking number provided to monitor the
+                progress of the shipment and delivery.
+              </p>
+              <h6>Where’s My Item?</h6>
+              <p>
+                We work as quickly as we can to process your order. If you’re
+                wondering why you haven’t received your item, please use the
+                tracking number that was sent to you. Depending on your
+                location, please allow up to 14 days for your order to arrive.
+                If you think your order should have arrived but you haven’t
+                received it, please track your order using the tracking number
+                that was provided to you at the time of shipping. If you can’t
+                view, track or determine the status of your order, you may
+                contact our Customer Service department <a href="#">here</a>.
+              </p>
+              <h6>Items that are lost, stolen or damaged in transit</h6>
+              <p>
+                While we have the utmost trust in our shipping partners, we
+                recognise that in rare cases, an item that has been sent to you
+                may be damaged during transit, lost or stolen. Unfortunately,
+                once an item is shipped to you, the risk of loss or damage
+                shifts away from us to you and Kobobid will not be responsible
+                for any damaged, stolen or lost items.
+              </p>
+              <p>
+                Once notified of your shipment, please use the tracking number
+                that was provided to you to track and monitor the progress of
+                the shipment. Being aware of your expected delivery date might
+                help to mitigate the risk of loss.
+              </p>
+              <p>
+                Any claims for damage that occurred while in transit, loss or
+                theft must be made to our shipping partner. If you experience
+                any issues of damage, loss or theft, please contact us. Our
+                Customer Service and Logistics teams will do their best to
+                assist you with any relevant documentation that may be required
+                to file a claim with our shipping partner.
+              </p>
+            </div>
+            <br />
+            <div id="safety">
+              <h4>SAFETY MEASURES</h4>
+              <p>
+                All our personnel take protective and hygiene measures to
+                deliver your items safely to you, in line with health advice
+                provided by global health agencies in response to the
+                Coronavirus (COVID-19) Pandemic. Because we take these safety
+                measures seriously, we have chosen FedEx as our shipping partner
+                based on their impressive commitment to keep their customers
+                safe during the pandemic. To read more about how FedEx is
+                responding to the pandemic, you may visit their site
+                <a href="https://www.fedex.com/en-ng/coronavirus.html">here.</a>
+              </p>
+            </div>
+            <br />
+            <div id="returns">
+              <h4>RETURNS</h4>
+              <h6>Quality Assurance</h6>
+              <p>
+                We stand behind the quality of the products we offer and want
+                every auction to be a positive experience. If by any chance, the
+                product you received is defective, we will do our best to make
+                it right.
+              </p>
+              <h6>Is there a limitation on initiating a return?</h6>
+              <p>
+                We allow returns and exchanges for certain products within 14
+                days of the delivery date. If no tracking number was assigned at
+                the time of shipping, the item to be returned must be received
+                within 21 days of the shipping date. The eligibility for return
+                will depend on the circumstances and reason for return.
+              </p>
+              <h6>I received a defective product</h6>
+              <p>
+                All of our products are tested and inspected before shipment. If
+                you however, receive a defective product, please
+                <a href="#">contact</a> our customer care team. Defective
+                products that are eligible for return may be returned for either
+                a refund or an exchange.
+              </p>
+              <h6>The wrong item was sent to me</h6>
+              <p>
+                If by some error, we send you the wrong item, colour, size or
+                specification of the product you ordered, the item would be
+                eligible for a refund or exchange.
+              </p>
+              <h6>How do I send my item that is eligible for a return?</h6>
+              <p>
+                If your item is eligible for a return, we will either send you a
+                prepaid shipping label or instructions to drop it off at our
+                facility. Any items being returned to us must be in its original
+                packaging and in new or unused condition. It must also include
+                all parts, accompanying literature (manuals, packaging leaflets,
+                instructions, warranty cards, promotional coupons etc.) and
+                accessories (batteries, chargers, cords, attachments,
+                extensions, etc.).
+              </p>
+              <h6>What happens after Kobobid receives my returned item?</h6>
+              <p>
+                We inspect all returned items to ensure that it is the exact
+                same item that was sent to you and that the item has been
+                returned to us in its original condition. The returned item’s
+                UPC or serial number must match the number we have in our
+                records. Removal or alteration of the product’s UPC or serial
+                number label will automatically void any possibility of refund
+                or exchange. After inspection, if we discover that (a) the
+                numbers are mismatched; or (b) the number has been altered or
+                removed; or (c) the item appears to have been used; or (d) the
+                item’s packaging has been damaged; or (e) some of the item’s
+                parts, literature, accessories or other like accompanying
+                materials is missing, we will void the eligibility for return or
+                refund and return the item to you. If we sent you a shipping
+                label, we will send you an invoice for the refund of the cost of
+                returning the item to us. You will also be responsible for the
+                cost of sending the item back to you.
+              </p>
+            </div>
+            <br />
+            <div id="exchange">
+              <h4>EXCHANGE & REFUNDS</h4>
+              <p>
+                Defective or wrong items may be exchanged/replaced at no
+                additional cost to you. If you choose to receive a refund, only
+                the Final Auction Price paid at checkout will be refunded.
+              </p>
+              <p>
+                Unfortunately, we are unable to refund the shipping fee that was
+                paid to ship the item to you. If your item is eligible for a
+                return because it is defective or because we sent you the wrong
+                item, we will bear the cost of receiving back the item from you
+                and if you desire, sending you a replacement.
+              </p>
+              <p>
+                Your refund will be applied to the original form of payment. We
+                are unable to make refunds to an alternative account. Refunds
+                will be processed after we receive and inspect your returned
+                item. Please allow up to 10 business days to receive your
+                refund. For the avoidance of doubt, please note that bids placed
+                in auctions are not eligible for refunds.
+              </p>
+            </div>
+            <br />
+            <div id="cancel">
+              <h4>CANCELLATION</h4>
+              <p>
+                You may cancel your order at any time before it is processed.
+                Once we process your order, it is no longer eligible for
+                cancellation and will be subject to our Return Policy. If your
+                order is eligible for a cancellation, you will be entitled to a
+                refund of the transaction amount, including the shipping charges
+                but less the applicable payment processing fees. Our payment
+                processor is Flutterwave and you may view their payment
+                processing charges
+                <a href="https://flutterwave.com/ng/pricing" target="_blank"
+                  >here</a
+                >. Please note that any bids used in the auction that led to the
+                order will not be forfeited and cannot be refunded to your
+                account.
+              </p>
+              <h6>When we’re unable to fulfil your order</h6>
+              <p>
+                In the event that we’re unable to fulfil your purchase or
+                auction order, we will provide you with the option to accept an
+                alternative but comparable item. If you decline the alternative
+                item, you will receive a full refund of the transaction amount
+                including all shipping and payment processing charges. In
+                addition, any bids used in that specific auction will be
+                credited back to your account. For the avoidance of doubt, we
+                are unable to refund the cost of the bids purchased and used in
+                that auction.
+              </p>
+              <h6>Suspicious and Fraudulent Activities</h6>
+              <p>
+                We reserve the right to determine that certain customers have
+                engaged in suspicious activity that is aimed at defrauding
+                Kobobid. If you request several returns or cancellations, make
+                several claims for loss/damage/theft or return multiple items to
+                us that do not appear to be in their original condition, we may
+                make the determination that you have engaged in fraudulent
+                activity and your account with us will be terminated. Once
+                terminated, you will be unable to set up a new account with us
+                and your rights upon termination shall be subject to our Terms
+                of Use which can be found
+                <a href="terms-of-service.html">here</a>.
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Document Footer -->
+    <footer id="footer">
+      <div class="container">
+        <div class="row py-5">
+          <div class="col-12 col-sm-6 col-lg-3">
+            <a href="\"
+              ><img
+                src="images/logo-white.png"
+                class="img--navbar-brand"
+                alt="kobobid logo"
+            /></a>
+            <p class="text-white my-3">
+              Nigeria's leading online penny auction platform for high quality
+              products and offerings to help you afford your best life.
+            </p>
+            <ul class="nav px-0">
+              <li class="nav-item">
+                <a class="nav-link text-white" aria-current="page" href="#">
+                  <span class="fab fa-facebook-f"></span>
+                  <span class="d-none">Facebook</span>
+                </a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link text-white" href="#">
+                  <span class="fab fa-twitter"></span>
+                  <span class="d-none">twitter</span></a
+                >
+              </li>
+              <li class="nav-item">
+                <a class="nav-link text-white" href="#">
+                  <span class="fab fa-instagram"></span>
+                  <span class="d-none">Instagram</span></a
+                >
+              </li>
+              <li class="nav-item">
+                <a class="nav-link text-white" href="#">
+                  <span class="fab fa-snapchat-ghost"></span>
+                  <span class="d-none">snapchat</span></a
+                >
+              </li>
+            </ul>
+            <div class="btn-group my-4">
+              <a class="btn bg-white text-uppercase me-3" href="./login.html"
+                >login</a
+              >
+              <a class="btn btn-orange text-uppercase" href="./register.html"
+                >register</a
+              >
+            </div>
+          </div>
+          <div class="col-12 col-sm-6 col-lg-3">
+            <h4 class="text-white text-uppercase mb-4">information</h4>
+            <nav class="nav flex-column" aria-label="information">
+              <a class="nav-link text-white ps-0" href="terms.html"
+                >Terms of Use</a
+              >
+              <a class="nav-link text-white ps-0" href="privacy-policy.html"
+                >Privacy Policy</a
+              >
+              <a class="nav-link text-white ps-0" href="partnerships.html"
+                >Partnerships</a
+              >
+              <a class="nav-link text-white ps-0" href="sitemap.html"
+                >Sitemap</a
+              >
+            </nav>
+          </div>
+          <div class="col-12 col-sm-6 col-lg-3">
+            <h4 class="text-white text-uppercase mb-4">help</h4>
+            <nav class="nav flex-column" aria-label="information">
+              <a class="nav-link text-white ps-0" href="faqs.html">FAQs</a>
+              <a class="nav-link text-white ps-0" href="how-it-works.html"
+                >How Kobobid Works</a
+              >
+              <a class="nav-link text-white ps-0" href="what-is-bidpack.html"
+                >What Is a BidPack?</a
+              >
+              <a class="nav-link text-white ps-0" href="tips-and-features.html"
+                >Tips & Features</a
+              >
+              <a
+                class="nav-link text-white ps-0"
+                href="kobobid-penny-auction.html"
+                >Kobo Auctions vs. eBay</a
+              >
+              <a
+                class="nav-link text-white ps-0"
+                href="orders-and-shipping.html"
+                >Orders & Shipping</a
+              >
+              <a class="nav-link text-white ps-0" href="payments.html"
+                >Payments</a
+              >
+            </nav>
+          </div>
+          <div class="col-12 col-sm-6 col-lg-3">
+            <h4 class="text-white ps-0 text-uppercase mb-4">about us</h4>
+            <nav class="nav flex-column" aria-label="information">
+              <a class="nav-link text-white ps-0" href="about.html"
+                >About Kobobid</a
+              >
+              <a class="nav-link text-white ps-0" href="kobobid-promise.html"
+                >The Kobobid Promise</a
+              >
+              <a class="nav-link text-white ps-0" href="blog.html">Kobo Blog</a>
+              <a class="nav-link text-white ps-0" href="contact-us.html"
+                >Contact Us</a
+              >
+            </nav>
+          </div>
+        </div>
+        <div class="row p-5">
+          <div class="col-12 text-center">
+            <img
+              style="max-width: 90px; height: auto; width: 100%"
+              src="https://cdn.kobobid.com/web/logo1.png"
+              alt="Institute of Auctioneers"
+            />
+            <img
+              style="max-width: 90px; height: auto; width: 100%"
+              src="https://cdn.kobobid.com/web/logo3.png"
+              alt="National Lottery"
+            />
+            <img
+              style="max-width: 90px; height: auto; width: 100%"
+              src="https://cdn.kobobid.com/web/logo2.png"
+              alt="Keystone Bank"
+            />
+          </div>
+        </div>
+        <div
+          class="
+            row
+            text-white text-center
+            p-3
+            border border-white border-bottom-0 border-start-0 border-end-0
+          "
+        >
+          <div class="col">
+            <p>ICONE BIDS NIG LTD. © 2021 ALL RIGHTS RESERVED</p>
+          </div>
+        </div>
+      </div>
+    </footer>
+
+    <!-- ! Load JavaScript files -->
+    <script src="js/vendor/bootstrap.bundle.min.js" defer></script>
+    <script src="js/vendor/fontawesome.min.js" defer></script>
+    <script src="js/vendor/plugins.min.js" defer></script>
+    <script src="js/utils.min.js" defer></script>
+    <script src="js/toast.min.js" defer></script>
+    <script src="js/store.min.js" defer></script>
+    <script src="js/header.min.js" defer></script>
+    <script src="js/main.min.js" defer></script>
+
+    <!--
+        !Service Worker
+       -->
+    <script>
+      // ServiceWorker is a progressive technology. Ignore unsupported browsers
+      if ('serviceWorker' in navigator) {
+        window.addEventListener('load', () =>
+          navigator.serviceWorker.register('sw.js')
+        );
+      }
+    </script>
+
+    <!--
+        ! Load CSS files
+       -->
+    <noscript id="deferred-styles">
+      <link rel="stylesheet" href="css/vendor/animate.min.css" />
+      <link rel="stylesheet" href="css/vendor/bootstrap.min.css" />
+      <link rel="stylesheet" href="css/font.min.css" />
+      <link rel="stylesheet" href="css/main.min.css" />
+      <link rel="stylesheet" href="css/app.min.css" />
+    </noscript>
+    <script>
+      var loadDeferredStyles = function () {
+        var addStylesNode = document.getElementById('deferred-styles');
+        var replacement = document.createElement('div');
+        replacement.innerHTML = addStylesNode.textContent;
+        document.body.appendChild(replacement);
+        addStylesNode.parentElement.removeChild(addStylesNode);
+      };
+      var raf =
+        window.requestAnimationFrame ||
+        window.mozRequestAnimationFrame ||
+        window.webkitRequestAnimationFrame ||
+        window.msRequestAnimationFrame;
+      if (raf)
+        raf(function () {
+          window.setTimeout(loadDeferredStyles, 0);
+        });
+      else window.addEventListener('load', loadDeferredStyles);
+    </script>
+  </body>
+</html>

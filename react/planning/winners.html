@@ -1,0 +1,1933 @@
+<!DOCTYPE html>
+<html class="no-js" lang="en">
+  <head>
+    <meta charset="utf-8" />
+
+    <title>Winners | Bidnbuy</title>
+    <meta name="description" content="List of winners of past auctions" />
+    <meta name="robots" content="index,follow" />
+    <meta property="fb:page_id" content="" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <!--
+      Give name for pinning site to Taskbar on WIndows.
+    -->
+    <meta name="application-name" content="Bidnbuy" />
+    <!--
+      Give site tooltip for pinning
+    -->
+    <meta name="msapplication-tooltip" content="Bidnbuy" />
+    <meta name="msapplication-TileColor" content="#81c6c9" />
+    <!-- Make it possible to pin app on mobile -->
+    <meta name="mobile-web-app-capable" content="yes" />
+    <!-- Get Site to look like app on iOS  -->
+    <meta name="apple-mobile-web-app-capable" content="yes" />
+    <meta name="apple-mobile-web-app-status-bar-style" content="#81c6c9" />
+    <!--
+      Add Title for when site is pinned to iOS screen
+    -->
+    <meta name="apple-mobile-web-app-title" content="Bidnbuy" />
+    <meta name="theme-color" content="#81c6c9" />
+
+    <!--
+      Add icon for when pinned to iOS & any other mobile
+     -->
+    <link rel="icon" sizes="192x192" href="images/logo192.png" />
+    <link rel="icon" sizes="128x128" href="images/logo128.png" />
+    <link rel="icon" sizes="64x64" href="images/logo64.png" />
+    <link rel="icon" sizes="32x32" href="images/logo32.png" />
+    <link rel="icon" sizes="16x16" href="images/logo16.png" />
+    <link rel="apple-touch-icon" href="images/logo512.png" />
+    <!--
+      Display certain image when site is loaded as app on iOS
+     -->
+    <link
+      rel="apple-touch-startup-image"
+      media="(max-width: 480px) and (-webkit-min-device-pixel-ratio: 2)"
+      href="images/logo512.png"
+    />
+    <link rel="manifest" href="site.webmanifest" />
+
+    <!--
+      DNS Prefetching: prefetches the site that is included in the href
+    -->
+    <link rel="dns-prefetch" href="//ka-f.fontawesome.com" />
+  </head>
+
+  <body style="background: #ffffff">
+    <!-- Document Header -->
+    <header class="fixed-top text-gray" id="header">
+      <nav class="navbar navbar-expand-xl" aria-label="main navigation">
+        <div class="container">
+          <button
+            class="navbar-toggler navbar-toggler--custom"
+            type="button"
+            data-bs-toggle="collapse"
+            data-bs-target="#navbarSupportedContent"
+            aria-controls="navbarSupportedContent"
+            aria-expanded="false"
+            aria-label="Toggle navigation"
+          >
+            <span class="navbar-toggler-icon"
+              ><span class="fas fa-bars fs-2 text-gray"></span>
+            </span>
+          </button>
+          <a class="navbar-brand" href="/"
+            ><img
+              src="images/logo-white.png"
+              alt="bidnbuy"
+              class="d-none img--navbar-brand"
+            /><img
+              src="images/logo-success.png"
+              alt="bidnbuy"
+              class="img--navbar-brand"
+            />
+          </a>
+          <ul class="nav d-xl-none ms-auto">
+            <li class="nav-item" onclick="toggleSearch()">
+              <a class="nav-link nav-link--header" href="#"
+                ><span class="fas fa-search fs-2"></span>
+              </a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link nav-link--header" href="#"
+                ><span class="fas fa-bell fs-2"></span>
+              </a>
+            </li>
+          </ul>
+
+          <div
+            class="
+              collapse
+              navbar-collapse
+              justify-content-end
+              align-items-center
+              text-uppercase text-gray
+            "
+            id="navbarSupportedContent"
+          >
+            <div
+              class="
+                d-flex d-xl-none
+                justify-content-between
+                align-items-center
+                mb-4
+              "
+            >
+              <a class="navbar-brand" href="/"
+                ><img
+                  src="images/logo-white.png"
+                  alt="bidnbuy"
+                  class="d-none img--navbar-brand"
+                /><img
+                  src="images/logo-success.png"
+                  alt="bidnbuy"
+                  class="img--navbar-brand"
+                />
+              </a>
+
+              <span
+                class="fas fa-times fs-3 pointer"
+                data-bs-toggle="collapse"
+                data-bs-target="#navbarSupportedContent"
+                aria-controls="navbarSupportedContent"
+                aria-expanded="false"
+                aria-label="Toggle navigation"
+              ></span>
+            </div>
+            <ul class="navbar-nav navbar-nav--header mb-2 mb-xl-0 mt-xl-1">
+              <li class="nav-item nav-item--header d-none d-xl-block">
+                <a
+                  class="nav-link nav-link--header py-xl-0 my-1 my-xl-0 mx-2"
+                  href="#"
+                  onclick="toggleSearch()"
+                >
+                  <span class="fas fa-search"></span>
+                  <span class="d-none">Search</span>
+                </a>
+              </li>
+              <li class="nav-item nav-item--header">
+                <a
+                  class="nav-link nav-link--header py-xl-0 my-1 my-xl-0 mx-2"
+                  href="auctions.html"
+                  >Auctions</a
+                >
+              </li>
+              <li class="nav-item nav-item--header">
+                <a
+                  class="nav-link nav-link--header py-xl-0 my-1 my-xl-0 mx-2"
+                  href="how-it-works.html"
+                  >How It Works</a
+                >
+              </li>
+              <li class="nav-item nav-item--header">
+                <a
+                  class="
+                    nav-link nav-link--header
+                    py-xl-0
+                    my-1 my-xl-0
+                    mx-2
+                    active
+                  "
+                  aria-current="page"
+                  href="#"
+                  >Winners</a
+                >
+              </li>
+            </ul>
+            <form class="form form--search">
+              <div class="input-group">
+                <input
+                  class="form-control form-control--custom me-2 py-2"
+                  type="search"
+                  placeholder="Search winners"
+                  aria-label="Search"
+                />
+                <span
+                  class="input-group-text border-0 bg-transparent pointer"
+                  id="search-icon"
+                >
+                  <span class="fas fa-search text-secondary"></span>
+                </span>
+              </div>
+              <button
+                class="btn shadow-none"
+                type="button"
+                onclick="toggleSearch()"
+              >
+                Cancel
+              </button>
+            </form>
+
+            <form class="ms-2 form form--buttons my-0">
+              <a class="btn" type="button" href="login.html"> login </a>
+              <a
+                class="btn btn-success btn-success--custom"
+                type="button"
+                href="register.html"
+              >
+                register
+              </a>
+            </form>
+          </div>
+        </div>
+      </nav>
+    </header>
+
+    <!-- Document Main Content -->
+    <main id="winners" class="main-content">
+      <section class="container mb-5">
+        <h1 class="d-none">Winners Section</h1>
+        <article class="row">
+          <h2 class="d-none">Winners Article</h2>
+          <div class="col-10 offset-1">
+            <img
+              src="images/WINNERS-banner-slide-1400x200.jpg"
+              alt="winner-banner-slide"
+              class="img-fluid"
+            />
+          </div>
+        </article>
+      </section>
+
+      <section class="container">
+        <article class="row">
+          <div class="col-12">
+            <h2>Winners</h2>
+            <div
+              class="
+                d-flex
+                flex-wrap
+                justify-content-between
+                align-items-center
+                my-4
+              "
+            >
+              <form class="d-flex align-items-center mb-3 mb-lg-0">
+                <input
+                  type="text"
+                  class="form-control form-control--custom rounded-0"
+                  id="exampleFormControlInput1"
+                  placeholder="Search winners"
+                />
+                <button class="btn shadow-none">
+                  <span class="fas fa-search"></span>
+                </button>
+              </form>
+
+              <form class="d-flex align-items-center">
+                <div class="d-flex align-items-center mx-2">
+                  <label class="form-label m-0 p-0">Sort:</label>
+                  <select
+                    class="
+                      form-select form-control form-control--custom
+                      border-0
+                      just-width
+                      rounded-0
+                      mx-2
+                    "
+                    aria-label="Default select example"
+                  >
+                    <option value="soon" selected>Latest</option>
+                    <option value="later">Oldest</option>
+                    <option value="low">Price low</option>
+                    <option value="high">Price high</option>
+                  </select>
+                </div>
+
+                <div class="d-flex align-items-center mx-2">
+                  <label class="form-label m-0 p-0">Show Product:</label>
+                  <select
+                    class="
+                      form-select form-control form-control--custom
+                      border-0
+                      just-width
+                      rounded-0
+                      mx-2
+                    "
+                  >
+                    <option value="10" selected>10</option>
+                    <option value="15">15</option>
+                    <option value="25">25</option>
+                    <option value="50">50</option>
+                  </select>
+                </div>
+              </form>
+            </div>
+          </div>
+
+          <div class="col-12 winners-table-container">
+            <table
+              class="
+                table table--winners table-hover table-borderless
+                align-middle
+              "
+            >
+              <caption class="d-none">
+                Auction winners table
+              </caption>
+              <thead>
+                <tr scope="colgroup">
+                  <th scope="col">
+                    <div class="justify-left">User</div>
+                  </th>
+                  <th scope="col">
+                    <div class="justify-left">Item</div>
+                  </th>
+                  <th scope="col">
+                    <div class="justify-center">Winning Price</div>
+                  </th>
+                  <th scope="col">
+                    <div class="justify-center">Date</div>
+                  </th>
+                  <th scope="col">
+                    <div class="justify-center">User Location</div>
+                  </th>
+                  <th scope="col">
+                    <div class="justify-center">Bid Type</div>
+                  </th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td class="pa3">
+                    <div
+                      class="
+                        align-items-center
+                        justify-content-start
+                        d-flex
+                        items-center
+                      "
+                    >
+                      <div class="">
+                        <img
+                          class="db br-100 w2 h2"
+                          src="https://cdn.kobobid.com/live/images/avatar.png"
+                          alt="Profile Photo"
+                        />
+                      </div>
+                      <div class="ml3">
+                        <div class="">movox</div>
+                      </div>
+                    </div>
+                  </td>
+                  <td class="pa3">
+                    <div
+                      class="
+                        align-items-center
+                        justify-content-start
+                        d-flex
+                        items-center
+                      "
+                    >
+                      <div class="">
+                        <a
+                          href="/products/6104483fe962ac50515f7fe2/n10-000-cash"
+                          ><img
+                            class="db br-100 w_product_img"
+                            src="https://cdn.kobobid.com/web/product/60513af57de86f604ab90deb/zqjo53d37b-n10-000-cash-1.png"
+                            alt="Product Image"
+                        /></a>
+                      </div>
+                      <div class="ml3">
+                        <a
+                          href="/products/6104483fe962ac50515f7fe2/n10-000-cash"
+                          class="truncate db black"
+                          style="max-width: 300px"
+                          >N10,000 Cash</a
+                        >
+                      </div>
+                    </div>
+                  </td>
+                  <td class="pa3">
+                    <div class="black">₦1.48 (62 bids)</div>
+                  </td>
+                  <td class="pa3">
+                    <div
+                      class="fade local-date-to-switch"
+                      data-local-date="Mon Aug 02 2021 00:13:44 GMT+0100 (West Africa Standard Time)"
+                    >
+                      2 hours ago
+                    </div>
+                  </td>
+                  <td class="pa3">
+                    <div class="fade"></div>
+                  </td>
+                  <td class="pa3 tag">
+                    <span class="tag-green"> BidMate </span>
+                  </td>
+                </tr>
+                <tr>
+                  <td class="pa3">
+                    <div
+                      class="
+                        align-items-center
+                        justify-content-start
+                        d-flex
+                        items-center
+                      "
+                    >
+                      <div class="">
+                        <img
+                          class="db br-100 w2 h2"
+                          src="https://cdn.kobobid.com/live/images/avatar.png"
+                          alt="Profile Photo"
+                        />
+                      </div>
+                      <div class="ml3">
+                        <div class="">christian198</div>
+                      </div>
+                    </div>
+                  </td>
+                  <td class="pa3">
+                    <div
+                      class="
+                        align-items-center
+                        justify-content-start
+                        d-flex
+                        items-center
+                      "
+                    >
+                      <div class="">
+                        <a href="/products/60fbd64fe962ac50515f6fcf/n1-000-cash"
+                          ><img
+                            class="db br-100 w_product_img"
+                            src="https://cdn.kobobid.com/web/product/60b140c8d14a4644027cc76c/2sxmha9hiy-n1-000-cash-1.png"
+                            alt="Product Image"
+                        /></a>
+                      </div>
+                      <div class="ml3">
+                        <a
+                          href="/products/60fbd64fe962ac50515f6fcf/n1-000-cash"
+                          class="truncate db black"
+                          style="max-width: 300px"
+                          >N1,000 Cash</a
+                        >
+                      </div>
+                    </div>
+                  </td>
+                  <td class="pa3">
+                    <div class="black">₦0.74 (19 bids)</div>
+                  </td>
+                  <td class="pa3">
+                    <div
+                      class="fade local-date-to-switch"
+                      data-local-date="Sun Aug 01 2021 23:40:01 GMT+0100 (West Africa Standard Time)"
+                    >
+                      3 hours ago
+                    </div>
+                  </td>
+                  <td class="pa3">
+                    <div class="fade"></div>
+                  </td>
+                  <td class="pa3 tag">
+                    <span class="tag-green"> Manual </span>
+                  </td>
+                </tr>
+                <tr>
+                  <td class="pa3">
+                    <div
+                      class="
+                        align-items-center
+                        justify-content-start
+                        d-flex
+                        items-center
+                      "
+                    >
+                      <div class="">
+                        <img
+                          class="db br-100 w2 h2"
+                          src="https://cdn.kobobid.com/live/images/avatar.png"
+                          alt="Profile Photo"
+                        />
+                      </div>
+                      <div class="ml3">
+                        <div class="">lollychris</div>
+                      </div>
+                    </div>
+                  </td>
+                  <td class="pa3">
+                    <div
+                      class="
+                        align-items-center
+                        justify-content-start
+                        d-flex
+                        items-center
+                      "
+                    >
+                      <div class="">
+                        <a href="/products/60fbd64fe962ac50515f6ffb/n2-500-cash"
+                          ><img
+                            class="db br-100 w_product_img"
+                            src="https://cdn.kobobid.com/web/product/60cb862f50feb9745d7de3fc/ycq3b9a8nl-n2-500-cash-1.png"
+                            alt="Product Image"
+                        /></a>
+                      </div>
+                      <div class="ml3">
+                        <a
+                          href="/products/60fbd64fe962ac50515f6ffb/n2-500-cash"
+                          class="truncate db black"
+                          style="max-width: 300px"
+                          >N2,500 Cash</a
+                        >
+                      </div>
+                    </div>
+                  </td>
+                  <td class="pa3">
+                    <div class="black">₦0.40 (11 bids)</div>
+                  </td>
+                  <td class="pa3">
+                    <div
+                      class="fade local-date-to-switch"
+                      data-local-date="Sun Aug 01 2021 23:05:12 GMT+0100 (West Africa Standard Time)"
+                    >
+                      4 hours ago
+                    </div>
+                  </td>
+                  <td class="pa3">
+                    <div class="fade">Ibadan</div>
+                  </td>
+                  <td class="pa3 tag">
+                    <span class="tag-green"> Manual </span>
+                  </td>
+                </tr>
+                <tr>
+                  <td class="pa3">
+                    <div
+                      class="
+                        align-items-center
+                        justify-content-start
+                        d-flex
+                        items-center
+                      "
+                    >
+                      <div class="">
+                        <img
+                          class="db br-100 w2 h2"
+                          src="https://cdn.kobobid.com/live/images/avatar.png"
+                          alt="Profile Photo"
+                        />
+                      </div>
+                      <div class="ml3">
+                        <div class="">christian198</div>
+                      </div>
+                    </div>
+                  </td>
+                  <td class="pa3">
+                    <div
+                      class="
+                        align-items-center
+                        justify-content-start
+                        d-flex
+                        items-center
+                      "
+                    >
+                      <div class="">
+                        <a href="/products/60fbd64fe962ac50515f6fda/n1-500-cash"
+                          ><img
+                            class="db br-100 w_product_img"
+                            src="https://cdn.kobobid.com/web/product/607d545292cfdf125b0ff2eb/2wg0zw3nb-n1-500-cash-1.png"
+                            alt="Product Image"
+                        /></a>
+                      </div>
+                      <div class="ml3">
+                        <a
+                          href="/products/60fbd64fe962ac50515f6fda/n1-500-cash"
+                          class="truncate db black"
+                          style="max-width: 300px"
+                          >N1,500 Cash</a
+                        >
+                      </div>
+                    </div>
+                  </td>
+                  <td class="pa3">
+                    <div class="black">₦0.10 (4 bids)</div>
+                  </td>
+                  <td class="pa3">
+                    <div
+                      class="fade local-date-to-switch"
+                      data-local-date="Sun Aug 01 2021 22:41:09 GMT+0100 (West Africa Standard Time)"
+                    >
+                      4 hours ago
+                    </div>
+                  </td>
+                  <td class="pa3">
+                    <div class="fade"></div>
+                  </td>
+                  <td class="pa3 tag">
+                    <span class="tag-green"> Manual </span>
+                  </td>
+                </tr>
+                <tr>
+                  <td class="pa3">
+                    <div
+                      class="
+                        align-items-center
+                        justify-content-start
+                        d-flex
+                        items-center
+                      "
+                    >
+                      <div class="">
+                        <img
+                          class="db br-100 w2 h2"
+                          src="https://cdn.kobobid.com/live/images/avatar.png"
+                          alt="Profile Photo"
+                        />
+                      </div>
+                      <div class="ml3">
+                        <div class="">wasiuayinpe</div>
+                      </div>
+                    </div>
+                  </td>
+                  <td class="pa3">
+                    <div
+                      class="
+                        align-items-center
+                        justify-content-start
+                        d-flex
+                        items-center
+                      "
+                    >
+                      <div class="">
+                        <a href="/products/60fbd64fe962ac50515f6fce/n1-000-cash"
+                          ><img
+                            class="db br-100 w_product_img"
+                            src="https://cdn.kobobid.com/web/product/60b140c8d14a4644027cc76c/2sxmha9hiy-n1-000-cash-1.png"
+                            alt="Product Image"
+                        /></a>
+                      </div>
+                      <div class="ml3">
+                        <a
+                          href="/products/60fbd64fe962ac50515f6fce/n1-000-cash"
+                          class="truncate db black"
+                          style="max-width: 300px"
+                          >N1,000 Cash</a
+                        >
+                      </div>
+                    </div>
+                  </td>
+                  <td class="pa3">
+                    <div class="black">₦0.04 (2 bids)</div>
+                  </td>
+                  <td class="pa3">
+                    <div
+                      class="fade local-date-to-switch"
+                      data-local-date="Sun Aug 01 2021 22:20:31 GMT+0100 (West Africa Standard Time)"
+                    >
+                      4 hours ago
+                    </div>
+                  </td>
+                  <td class="pa3">
+                    <div class="fade"></div>
+                  </td>
+                  <td class="pa3 tag">
+                    <span class="tag-green"> Manual </span>
+                  </td>
+                </tr>
+                <tr>
+                  <td class="pa3">
+                    <div
+                      class="
+                        align-items-center
+                        justify-content-start
+                        d-flex
+                        items-center
+                      "
+                    >
+                      <div class="">
+                        <img
+                          class="db br-100 w2 h2"
+                          src="https://cdn.kobobid.com/live/images/avatar.png"
+                          alt="Profile Photo"
+                        />
+                      </div>
+                      <div class="ml3">
+                        <div class="">cashb</div>
+                      </div>
+                    </div>
+                  </td>
+                  <td class="pa3">
+                    <div
+                      class="
+                        align-items-center
+                        justify-content-start
+                        d-flex
+                        items-center
+                      "
+                    >
+                      <div class="">
+                        <a
+                          href="/products/61000424e962ac50515f7818/n20-000-cash"
+                          ><img
+                            class="db br-100 w_product_img"
+                            src="https://cdn.kobobid.com/web/product/60513ae57de86f604ab90dea/qpalh5io1q-n20-000-cash-1.png"
+                            alt="Product Image"
+                        /></a>
+                      </div>
+                      <div class="ml3">
+                        <a
+                          href="/products/61000424e962ac50515f7818/n20-000-cash"
+                          class="truncate db black"
+                          style="max-width: 300px"
+                          >N20,000 Cash</a
+                        >
+                      </div>
+                    </div>
+                  </td>
+                  <td class="pa3">
+                    <div class="black">₦0.90 (16 bids)</div>
+                  </td>
+                  <td class="pa3">
+                    <div
+                      class="fade local-date-to-switch"
+                      data-local-date="Sun Aug 01 2021 22:04:53 GMT+0100 (West Africa Standard Time)"
+                    >
+                      5 hours ago
+                    </div>
+                  </td>
+                  <td class="pa3">
+                    <div class="fade"></div>
+                  </td>
+                  <td class="pa3 tag">
+                    <span class="tag-green"> BidMate </span>
+                  </td>
+                </tr>
+                <tr>
+                  <td class="pa3">
+                    <div
+                      class="
+                        align-items-center
+                        justify-content-start
+                        d-flex
+                        items-center
+                      "
+                    >
+                      <div class="">
+                        <img
+                          class="db br-100 w2 h2"
+                          src="https://cdn.kobobid.com/live/images/avatar.png"
+                          alt="Profile Photo"
+                        />
+                      </div>
+                      <div class="ml3">
+                        <div class="">wasiuayinpe</div>
+                      </div>
+                    </div>
+                  </td>
+                  <td class="pa3">
+                    <div
+                      class="
+                        align-items-center
+                        justify-content-start
+                        d-flex
+                        items-center
+                      "
+                    >
+                      <div class="">
+                        <a href="/products/60fbd64fe962ac50515f6ff6/10-bidpack"
+                          ><img
+                            class="db br-100 w_product_img"
+                            src="https://cdn.kobobid.com/web/product/6074c9b248fabb34f4a9cd58/zq0ooe1cpe-10-bidpack-1.png"
+                            alt="Product Image"
+                        /></a>
+                      </div>
+                      <div class="ml3">
+                        <a
+                          href="/products/60fbd64fe962ac50515f6ff6/10-bidpack"
+                          class="truncate db black"
+                          style="max-width: 300px"
+                          >10 BidPack</a
+                        >
+                      </div>
+                    </div>
+                  </td>
+                  <td class="pa3">
+                    <div class="black">₦0.09 (3 bids)</div>
+                  </td>
+                  <td class="pa3">
+                    <div
+                      class="fade local-date-to-switch"
+                      data-local-date="Sun Aug 01 2021 21:41:16 GMT+0100 (West Africa Standard Time)"
+                    >
+                      5 hours ago
+                    </div>
+                  </td>
+                  <td class="pa3">
+                    <div class="fade"></div>
+                  </td>
+                  <td class="pa3 tag">
+                    <span class="tag-green"> Manual </span>
+                  </td>
+                </tr>
+                <tr>
+                  <td class="pa3">
+                    <div
+                      class="
+                        align-items-center
+                        justify-content-start
+                        d-flex
+                        items-center
+                      "
+                    >
+                      <div class="">
+                        <img
+                          class="db br-100 w2 h2"
+                          src="https://cdn.kobobid.com/live/images/avatar.png"
+                          alt="Profile Photo"
+                        />
+                      </div>
+                      <div class="ml3">
+                        <div class="">odun11</div>
+                      </div>
+                    </div>
+                  </td>
+                  <td class="pa3">
+                    <div
+                      class="
+                        align-items-center
+                        justify-content-start
+                        d-flex
+                        items-center
+                      "
+                    >
+                      <div class="">
+                        <a href="/products/60fbd64fe962ac50515f6fcd/n1-000-cash"
+                          ><img
+                            class="db br-100 w_product_img"
+                            src="https://cdn.kobobid.com/web/product/60b140c8d14a4644027cc76c/2sxmha9hiy-n1-000-cash-1.png"
+                            alt="Product Image"
+                        /></a>
+                      </div>
+                      <div class="ml3">
+                        <a
+                          href="/products/60fbd64fe962ac50515f6fcd/n1-000-cash"
+                          class="truncate db black"
+                          style="max-width: 300px"
+                          >N1,000 Cash</a
+                        >
+                      </div>
+                    </div>
+                  </td>
+                  <td class="pa3">
+                    <div class="black">₦0.34 (17 bids)</div>
+                  </td>
+                  <td class="pa3">
+                    <div
+                      class="fade local-date-to-switch"
+                      data-local-date="Sun Aug 01 2021 21:23:43 GMT+0100 (West Africa Standard Time)"
+                    >
+                      5 hours ago
+                    </div>
+                  </td>
+                  <td class="pa3">
+                    <div class="fade"></div>
+                  </td>
+                  <td class="pa3 tag">
+                    <span class="tag-green"> Manual </span>
+                  </td>
+                </tr>
+                <tr>
+                  <td class="pa3">
+                    <div
+                      class="
+                        align-items-center
+                        justify-content-start
+                        d-flex
+                        items-center
+                      "
+                    >
+                      <div class="">
+                        <img
+                          class="db br-100 w2 h2"
+                          src="https://cdn.kobobid.com/live/images/avatar.png"
+                          alt="Profile Photo"
+                        />
+                      </div>
+                      <div class="ml3">
+                        <div class="">odun11</div>
+                      </div>
+                    </div>
+                  </td>
+                  <td class="pa3">
+                    <div
+                      class="
+                        align-items-center
+                        justify-content-start
+                        d-flex
+                        items-center
+                      "
+                    >
+                      <div class="">
+                        <a href="/products/60fbd64fe962ac50515f6fde/20-bidpack"
+                          ><img
+                            class="db br-100 w_product_img"
+                            src="https://cdn.kobobid.com/web/product/6074c9a248fabb34f4a9cd57/53bj5qxcqi-20-bidpack-1.png"
+                            alt="Product Image"
+                        /></a>
+                      </div>
+                      <div class="ml3">
+                        <a
+                          href="/products/60fbd64fe962ac50515f6fde/20-bidpack"
+                          class="truncate db black"
+                          style="max-width: 300px"
+                          >20 BidPack</a
+                        >
+                      </div>
+                    </div>
+                  </td>
+                  <td class="pa3">
+                    <div class="black">₦0.08 (3 bids)</div>
+                  </td>
+                  <td class="pa3">
+                    <div
+                      class="fade local-date-to-switch"
+                      data-local-date="Sun Aug 01 2021 21:00:48 GMT+0100 (West Africa Standard Time)"
+                    >
+                      6 hours ago
+                    </div>
+                  </td>
+                  <td class="pa3">
+                    <div class="fade"></div>
+                  </td>
+                  <td class="pa3 tag">
+                    <span class="tag-green"> Manual </span>
+                  </td>
+                </tr>
+                <tr>
+                  <td class="pa3">
+                    <div
+                      class="
+                        align-items-center
+                        justify-content-start
+                        d-flex
+                        items-center
+                      "
+                    >
+                      <div class="">
+                        <img
+                          class="db br-100 w2 h2"
+                          src="https://cdn.kobobid.com/live/images/avatar.png"
+                          alt="Profile Photo"
+                        />
+                      </div>
+                      <div class="ml3">
+                        <div class="">odun11</div>
+                      </div>
+                    </div>
+                  </td>
+                  <td class="pa3">
+                    <div
+                      class="
+                        align-items-center
+                        justify-content-start
+                        d-flex
+                        items-center
+                      "
+                    >
+                      <div class="">
+                        <a href="/products/60fbd64fe962ac50515f6ff5/10-bidpack"
+                          ><img
+                            class="db br-100 w_product_img"
+                            src="https://cdn.kobobid.com/web/product/6074c9b248fabb34f4a9cd58/zq0ooe1cpe-10-bidpack-1.png"
+                            alt="Product Image"
+                        /></a>
+                      </div>
+                      <div class="ml3">
+                        <a
+                          href="/products/60fbd64fe962ac50515f6ff5/10-bidpack"
+                          class="truncate db black"
+                          style="max-width: 300px"
+                          >10 BidPack</a
+                        >
+                      </div>
+                    </div>
+                  </td>
+                  <td class="pa3">
+                    <div class="black">₦0.49 (6 bids)</div>
+                  </td>
+                  <td class="pa3">
+                    <div
+                      class="fade local-date-to-switch"
+                      data-local-date="Sun Aug 01 2021 20:45:23 GMT+0100 (West Africa Standard Time)"
+                    >
+                      6 hours ago
+                    </div>
+                  </td>
+                  <td class="pa3">
+                    <div class="fade"></div>
+                  </td>
+                  <td class="pa3 tag">
+                    <span class="tag-green"> Manual </span>
+                  </td>
+                </tr>
+                <tr>
+                  <td class="pa3">
+                    <div
+                      class="
+                        align-items-center
+                        justify-content-start
+                        d-flex
+                        items-center
+                      "
+                    >
+                      <div class="">
+                        <img
+                          class="db br-100 w2 h2"
+                          src="https://cdn.kobobid.com/live/images/avatar.png"
+                          alt="Profile Photo"
+                        />
+                      </div>
+                      <div class="ml3">
+                        <div class="">emenikeobi</div>
+                      </div>
+                    </div>
+                  </td>
+                  <td class="pa3">
+                    <div
+                      class="
+                        align-items-center
+                        justify-content-start
+                        d-flex
+                        items-center
+                      "
+                    >
+                      <div class="">
+                        <a
+                          href="/products/60fbd64fe962ac50515f6fff/maxi-washing-machine-top-loader-100fae06"
+                          ><img
+                            class="db br-100 w_product_img"
+                            src="https://cdn.kobobid.com/web/product/0dyp9qbt5c/5kpskle59-maxi-washing-machine-top-loader-100fae06-2.png"
+                            alt="Product Image"
+                        /></a>
+                      </div>
+                      <div class="ml3">
+                        <a
+                          href="/products/60fbd64fe962ac50515f6fff/maxi-washing-machine-top-loader-100fae06"
+                          class="truncate db black"
+                          style="max-width: 300px"
+                          >Maxi Washing Machine Top Loader 100FAE06</a
+                        >
+                      </div>
+                    </div>
+                  </td>
+                  <td class="pa3">
+                    <div class="black">₦4.74 (390 bids)</div>
+                  </td>
+                  <td class="pa3">
+                    <div
+                      class="fade local-date-to-switch"
+                      data-local-date="Sun Aug 01 2021 20:29:37 GMT+0100 (West Africa Standard Time)"
+                    >
+                      6 hours ago
+                    </div>
+                  </td>
+                  <td class="pa3">
+                    <div class="fade"></div>
+                  </td>
+                  <td class="pa3 tag">
+                    <span class="tag-green"> BidMate </span>
+                  </td>
+                </tr>
+                <tr>
+                  <td class="pa3">
+                    <div
+                      class="
+                        align-items-center
+                        justify-content-start
+                        d-flex
+                        items-center
+                      "
+                    >
+                      <div class="">
+                        <img
+                          class="db br-100 w2 h2"
+                          src="https://cdn.kobobid.com/live/images/avatar.png"
+                          alt="Profile Photo"
+                        />
+                      </div>
+                      <div class="ml3">
+                        <div class="">motide</div>
+                      </div>
+                    </div>
+                  </td>
+                  <td class="pa3">
+                    <div
+                      class="
+                        align-items-center
+                        justify-content-start
+                        d-flex
+                        items-center
+                      "
+                    >
+                      <div class="">
+                        <a href="/products/60fbd64fe962ac50515f6fcc/n1-000-cash"
+                          ><img
+                            class="db br-100 w_product_img"
+                            src="https://cdn.kobobid.com/web/product/60b140c8d14a4644027cc76c/2sxmha9hiy-n1-000-cash-1.png"
+                            alt="Product Image"
+                        /></a>
+                      </div>
+                      <div class="ml3">
+                        <a
+                          href="/products/60fbd64fe962ac50515f6fcc/n1-000-cash"
+                          class="truncate db black"
+                          style="max-width: 300px"
+                          >N1,000 Cash</a
+                        >
+                      </div>
+                    </div>
+                  </td>
+                  <td class="pa3">
+                    <div class="black">₦0.02 (1 bids)</div>
+                  </td>
+                  <td class="pa3">
+                    <div
+                      class="fade local-date-to-switch"
+                      data-local-date="Sun Aug 01 2021 20:20:13 GMT+0100 (West Africa Standard Time)"
+                    >
+                      6 hours ago
+                    </div>
+                  </td>
+                  <td class="pa3">
+                    <div class="fade"></div>
+                  </td>
+                  <td class="pa3 tag">
+                    <span class="tag-green"> Manual </span>
+                  </td>
+                </tr>
+                <tr>
+                  <td class="pa3">
+                    <div
+                      class="
+                        align-items-center
+                        justify-content-start
+                        d-flex
+                        items-center
+                      "
+                    >
+                      <div class="">
+                        <img
+                          class="db br-100 w2 h2"
+                          src="https://cdn.kobobid.com/live/images/avatar.png"
+                          alt="Profile Photo"
+                        />
+                      </div>
+                      <div class="ml3">
+                        <div class="">slowmotion</div>
+                      </div>
+                    </div>
+                  </td>
+                  <td class="pa3">
+                    <div
+                      class="
+                        align-items-center
+                        justify-content-start
+                        d-flex
+                        items-center
+                      "
+                    >
+                      <div class="">
+                        <a href="/products/60fbd64fe962ac50515f6fe9/n5-000-cash"
+                          ><img
+                            class="db br-100 w_product_img"
+                            src="https://cdn.kobobid.com/web/product/60513b217de86f604ab90dec/a97g94d9d-n5-000-cash-1.png"
+                            alt="Product Image"
+                        /></a>
+                      </div>
+                      <div class="ml3">
+                        <a
+                          href="/products/60fbd64fe962ac50515f6fe9/n5-000-cash"
+                          class="truncate db black"
+                          style="max-width: 300px"
+                          >N5,000 Cash</a
+                        >
+                      </div>
+                    </div>
+                  </td>
+                  <td class="pa3">
+                    <div class="black">₦0.49 (20 bids)</div>
+                  </td>
+                  <td class="pa3">
+                    <div
+                      class="fade local-date-to-switch"
+                      data-local-date="Sun Aug 01 2021 19:45:15 GMT+0100 (West Africa Standard Time)"
+                    >
+                      7 hours ago
+                    </div>
+                  </td>
+                  <td class="pa3">
+                    <div class="fade"></div>
+                  </td>
+                  <td class="pa3 tag">
+                    <span class="tag-green"> BidMate </span>
+                  </td>
+                </tr>
+                <tr>
+                  <td class="pa3">
+                    <div
+                      class="
+                        align-items-center
+                        justify-content-start
+                        d-flex
+                        items-center
+                      "
+                    >
+                      <div class="">
+                        <img
+                          class="db br-100 w2 h2"
+                          src="https://cdn.kobobid.com/web/avatar/32uk4a1uxa-rankadede.png"
+                          alt="Profile Photo"
+                        />
+                      </div>
+                      <div class="ml3">
+                        <div class="">rankadede</div>
+                      </div>
+                    </div>
+                  </td>
+                  <td class="pa3">
+                    <div
+                      class="
+                        align-items-center
+                        justify-content-start
+                        d-flex
+                        items-center
+                      "
+                    >
+                      <div class="">
+                        <a
+                          href="/products/60fbd64fe962ac50515f6ffd/nulek-thick-glass-table-top-gas-cooker"
+                          ><img
+                            class="db br-100 w_product_img"
+                            src="https://cdn.kobobid.com/web/product/lbpqkdhdcd/64cwjj226l-nulek-thick-glass-table-top-gas-cooker-1.png"
+                            alt="Product Image"
+                        /></a>
+                      </div>
+                      <div class="ml3">
+                        <a
+                          href="/products/60fbd64fe962ac50515f6ffd/nulek-thick-glass-table-top-gas-cooker"
+                          class="truncate db black"
+                          style="max-width: 300px"
+                          >Nulek Thick Glass Table Top Gas Cooker</a
+                        >
+                      </div>
+                    </div>
+                  </td>
+                  <td class="pa3">
+                    <div class="black">₦6.68 (208 bids)</div>
+                  </td>
+                  <td class="pa3">
+                    <div
+                      class="fade local-date-to-switch"
+                      data-local-date="Sun Aug 01 2021 19:01:47 GMT+0100 (West Africa Standard Time)"
+                    >
+                      8 hours ago
+                    </div>
+                  </td>
+                  <td class="pa3">
+                    <div class="fade">Kaduna</div>
+                  </td>
+                  <td class="pa3 tag">
+                    <span class="tag-green"> BidMate </span>
+                  </td>
+                </tr>
+                <tr>
+                  <td class="pa3">
+                    <div
+                      class="
+                        align-items-center
+                        justify-content-start
+                        d-flex
+                        items-center
+                      "
+                    >
+                      <div class="">
+                        <img
+                          class="db br-100 w2 h2"
+                          src="https://cdn.kobobid.com/live/images/avatar.png"
+                          alt="Profile Photo"
+                        />
+                      </div>
+                      <div class="ml3">
+                        <div class="">emenikeobi</div>
+                      </div>
+                    </div>
+                  </td>
+                  <td class="pa3">
+                    <div
+                      class="
+                        align-items-center
+                        justify-content-start
+                        d-flex
+                        items-center
+                      "
+                    >
+                      <div class="">
+                        <a href="/products/60fbd64fe962ac50515f6ffa/n2-500-cash"
+                          ><img
+                            class="db br-100 w_product_img"
+                            src="https://cdn.kobobid.com/web/product/60cb862f50feb9745d7de3fc/ycq3b9a8nl-n2-500-cash-1.png"
+                            alt="Product Image"
+                        /></a>
+                      </div>
+                      <div class="ml3">
+                        <a
+                          href="/products/60fbd64fe962ac50515f6ffa/n2-500-cash"
+                          class="truncate db black"
+                          style="max-width: 300px"
+                          >N2,500 Cash</a
+                        >
+                      </div>
+                    </div>
+                  </td>
+                  <td class="pa3">
+                    <div class="black">₦0.11 (6 bids)</div>
+                  </td>
+                  <td class="pa3">
+                    <div
+                      class="fade local-date-to-switch"
+                      data-local-date="Sun Aug 01 2021 19:00:52 GMT+0100 (West Africa Standard Time)"
+                    >
+                      8 hours ago
+                    </div>
+                  </td>
+                  <td class="pa3">
+                    <div class="fade"></div>
+                  </td>
+                  <td class="pa3 tag">
+                    <span class="tag-green"> BidMate </span>
+                  </td>
+                </tr>
+                <tr>
+                  <td class="pa3">
+                    <div
+                      class="
+                        align-items-center
+                        justify-content-start
+                        d-flex
+                        items-center
+                      "
+                    >
+                      <div class="">
+                        <img
+                          class="db br-100 w2 h2"
+                          src="https://cdn.kobobid.com/live/images/avatar.png"
+                          alt="Profile Photo"
+                        />
+                      </div>
+                      <div class="ml3">
+                        <div class="">scorpio</div>
+                      </div>
+                    </div>
+                  </td>
+                  <td class="pa3">
+                    <div
+                      class="
+                        align-items-center
+                        justify-content-start
+                        d-flex
+                        items-center
+                      "
+                    >
+                      <div class="">
+                        <a href="/products/60fbd64fe962ac50515f6ffe/40-bidpack"
+                          ><img
+                            class="db br-100 w_product_img"
+                            src="https://cdn.kobobid.com/web/product/6071b87e6e5f6218472c85c1/u4i9si1na-40-bidpack-1.png"
+                            alt="Product Image"
+                        /></a>
+                      </div>
+                      <div class="ml3">
+                        <a
+                          href="/products/60fbd64fe962ac50515f6ffe/40-bidpack"
+                          class="truncate db black"
+                          style="max-width: 300px"
+                          >40 BidPack</a
+                        >
+                      </div>
+                    </div>
+                  </td>
+                  <td class="pa3">
+                    <div class="black">₦1.43 (64 bids)</div>
+                  </td>
+                  <td class="pa3">
+                    <div
+                      class="fade local-date-to-switch"
+                      data-local-date="Sun Aug 01 2021 18:51:57 GMT+0100 (West Africa Standard Time)"
+                    >
+                      8 hours ago
+                    </div>
+                  </td>
+                  <td class="pa3">
+                    <div class="fade"></div>
+                  </td>
+                  <td class="pa3 tag">
+                    <span class="tag-green"> BidMate </span>
+                  </td>
+                </tr>
+                <tr>
+                  <td class="pa3">
+                    <div
+                      class="
+                        align-items-center
+                        justify-content-start
+                        d-flex
+                        items-center
+                      "
+                    >
+                      <div class="">
+                        <img
+                          class="db br-100 w2 h2"
+                          src="https://cdn.kobobid.com/live/images/avatar.png"
+                          alt="Profile Photo"
+                        />
+                      </div>
+                      <div class="ml3">
+                        <div class="">fifijobi</div>
+                      </div>
+                    </div>
+                  </td>
+                  <td class="pa3">
+                    <div
+                      class="
+                        align-items-center
+                        justify-content-start
+                        d-flex
+                        items-center
+                      "
+                    >
+                      <div class="">
+                        <a
+                          href="/products/60fbd64fe962ac50515f6fd7/n1-000-airtime"
+                          ><img
+                            class="db br-100 w_product_img"
+                            src="https://cdn.kobobid.com/web/product/6043aee57014c37d8e90c942/k7skqm5zjh-n1-000-airtime-1.png"
+                            alt="Product Image"
+                        /></a>
+                      </div>
+                      <div class="ml3">
+                        <a
+                          href="/products/60fbd64fe962ac50515f6fd7/n1-000-airtime"
+                          class="truncate db black"
+                          style="max-width: 300px"
+                          >N1,000 Airtime</a
+                        >
+                      </div>
+                    </div>
+                  </td>
+                  <td class="pa3">
+                    <div class="black">₦0.06 (3 bids)</div>
+                  </td>
+                  <td class="pa3">
+                    <div
+                      class="fade local-date-to-switch"
+                      data-local-date="Sun Aug 01 2021 18:20:38 GMT+0100 (West Africa Standard Time)"
+                    >
+                      8 hours ago
+                    </div>
+                  </td>
+                  <td class="pa3">
+                    <div class="fade"></div>
+                  </td>
+                  <td class="pa3 tag">
+                    <span class="tag-green"> Manual </span>
+                  </td>
+                </tr>
+                <tr>
+                  <td class="pa3">
+                    <div
+                      class="
+                        align-items-center
+                        justify-content-start
+                        d-flex
+                        items-center
+                      "
+                    >
+                      <div class="">
+                        <img
+                          class="db br-100 w2 h2"
+                          src="https://cdn.kobobid.com/live/images/avatar.png"
+                          alt="Profile Photo"
+                        />
+                      </div>
+                      <div class="ml3">
+                        <div class="">ifypsalms</div>
+                      </div>
+                    </div>
+                  </td>
+                  <td class="pa3">
+                    <div
+                      class="
+                        align-items-center
+                        justify-content-start
+                        d-flex
+                        items-center
+                      "
+                    >
+                      <div class="">
+                        <a href="/products/60fbd64fe962ac50515f6fd9/n1-500-cash"
+                          ><img
+                            class="db br-100 w_product_img"
+                            src="https://cdn.kobobid.com/web/product/607d545292cfdf125b0ff2eb/2wg0zw3nb-n1-500-cash-1.png"
+                            alt="Product Image"
+                        /></a>
+                      </div>
+                      <div class="ml3">
+                        <a
+                          href="/products/60fbd64fe962ac50515f6fd9/n1-500-cash"
+                          class="truncate db black"
+                          style="max-width: 300px"
+                          >N1,500 Cash</a
+                        >
+                      </div>
+                    </div>
+                  </td>
+                  <td class="pa3">
+                    <div class="black">₦0.30 (5 bids)</div>
+                  </td>
+                  <td class="pa3">
+                    <div
+                      class="fade local-date-to-switch"
+                      data-local-date="Sun Aug 01 2021 17:48:33 GMT+0100 (West Africa Standard Time)"
+                    >
+                      9 hours ago
+                    </div>
+                  </td>
+                  <td class="pa3">
+                    <div class="fade"></div>
+                  </td>
+                  <td class="pa3 tag">
+                    <span class="tag-green"> Manual </span>
+                  </td>
+                </tr>
+                <tr>
+                  <td class="pa3">
+                    <div
+                      class="
+                        align-items-center
+                        justify-content-start
+                        d-flex
+                        items-center
+                      "
+                    >
+                      <div class="">
+                        <img
+                          class="db br-100 w2 h2"
+                          src="https://cdn.kobobid.com/live/images/avatar.png"
+                          alt="Profile Photo"
+                        />
+                      </div>
+                      <div class="ml3">
+                        <div class="">aasiya</div>
+                      </div>
+                    </div>
+                  </td>
+                  <td class="pa3">
+                    <div
+                      class="
+                        align-items-center
+                        justify-content-start
+                        d-flex
+                        items-center
+                      "
+                    >
+                      <div class="">
+                        <a href="/products/60fbd64fe962ac50515f6ff3/10-bidpack"
+                          ><img
+                            class="db br-100 w_product_img"
+                            src="https://cdn.kobobid.com/web/product/6074c9b248fabb34f4a9cd58/zq0ooe1cpe-10-bidpack-1.png"
+                            alt="Product Image"
+                        /></a>
+                      </div>
+                      <div class="ml3">
+                        <a
+                          href="/products/60fbd64fe962ac50515f6ff3/10-bidpack"
+                          class="truncate db black"
+                          style="max-width: 300px"
+                          >10 BidPack</a
+                        >
+                      </div>
+                    </div>
+                  </td>
+                  <td class="pa3">
+                    <div class="black">₦0.04 (2 bids)</div>
+                  </td>
+                  <td class="pa3">
+                    <div
+                      class="fade local-date-to-switch"
+                      data-local-date="Sun Aug 01 2021 17:30:21 GMT+0100 (West Africa Standard Time)"
+                    >
+                      9 hours ago
+                    </div>
+                  </td>
+                  <td class="pa3">
+                    <div class="fade">Ilorin</div>
+                  </td>
+                  <td class="pa3 tag">
+                    <span class="tag-green"> BidMate </span>
+                  </td>
+                </tr>
+                <tr>
+                  <td class="pa3">
+                    <div
+                      class="
+                        align-items-center
+                        justify-content-start
+                        d-flex
+                        items-center
+                      "
+                    >
+                      <div class="">
+                        <img
+                          class="db br-100 w2 h2"
+                          src="https://cdn.kobobid.com/live/images/avatar.png"
+                          alt="Profile Photo"
+                        />
+                      </div>
+                      <div class="ml3">
+                        <div class="">aasiya</div>
+                      </div>
+                    </div>
+                  </td>
+                  <td class="pa3">
+                    <div
+                      class="
+                        align-items-center
+                        justify-content-start
+                        d-flex
+                        items-center
+                      "
+                    >
+                      <div class="">
+                        <a href="/products/60fbd64fe962ac50515f6fcb/n1-000-cash"
+                          ><img
+                            class="db br-100 w_product_img"
+                            src="https://cdn.kobobid.com/web/product/60b140c8d14a4644027cc76c/2sxmha9hiy-n1-000-cash-1.png"
+                            alt="Product Image"
+                        /></a>
+                      </div>
+                      <div class="ml3">
+                        <a
+                          href="/products/60fbd64fe962ac50515f6fcb/n1-000-cash"
+                          class="truncate db black"
+                          style="max-width: 300px"
+                          >N1,000 Cash</a
+                        >
+                      </div>
+                    </div>
+                  </td>
+                  <td class="pa3">
+                    <div class="black">₦0.05 (3 bids)</div>
+                  </td>
+                  <td class="pa3">
+                    <div
+                      class="fade local-date-to-switch"
+                      data-local-date="Sun Aug 01 2021 17:15:30 GMT+0100 (West Africa Standard Time)"
+                    >
+                      9 hours ago
+                    </div>
+                  </td>
+                  <td class="pa3">
+                    <div class="fade">Ilorin</div>
+                  </td>
+                  <td class="pa3 tag">
+                    <span class="tag-green"> BidMate </span>
+                  </td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+
+          <div class="col-12 text-center my-5">
+            <a class="btn btn-orange-outline btn-lg px-5 text-uppercase d-none"
+              >view more</a
+            >
+            <ul
+              class="
+                d-flex
+                list-unstyled
+                justify-content-center
+                align-items-center
+              "
+            >
+              <li class="p-2 mx-2 pointer">
+                <span class="fas fa-chevron-left"></span>
+              </li>
+              <li class="p-2 mx-2 pointer border border-orange">1</li>
+              <li class="p-2 mx-2 pointer">2</li>
+              <li class="p-2 mx-2 pointer">3</li>
+              <li class="p-2 mx-2 pointer">4</li>
+              <li class="p-2 mx-2 pointer">
+                <span class="fas fa-chevron-right"></span>
+              </li>
+            </ul>
+          </div>
+        </article>
+      </section>
+
+      <section class="container">
+        <div class="row align-items-center px-4 py-5 px-lg-5 my-5 bg-pattern-2">
+          <div class="col-12 col-lg-7 p-lg-5 mb-4 mb-lg-0">
+            <h2 class="text-white">
+              Subscribe to our newsletter and receive exclusive offers every
+              week
+            </h2>
+          </div>
+          <div class="col-12 col-lg p-lg-5">
+            <form class="d-flex">
+              <input
+                type="email"
+                class="form-control form-control--custom p-2 rounded-0"
+                id="exampleInputEmail1"
+                placeholder="Enter your email"
+              />
+              <button
+                type="button"
+                class="btn btn-orange text-uppercase rounded-0"
+              >
+                subscribe
+              </button>
+            </form>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <!-- Document Footer -->
+    <footer id="footer">
+      <div class="container">
+        <div class="row py-5">
+          <div class="col-12 col-sm-6 col-lg-3">
+            <a href="\"
+              ><img
+                src="images/logo-white.png"
+                class="img--navbar-brand"
+                alt="kobobid logo"
+            /></a>
+            <p class="text-white my-3">
+              Nigeria's leading online penny auction platform for high quality
+              products and offerings to help you afford your best life.
+            </p>
+            <ul class="nav px-0">
+              <li class="nav-item">
+                <a class="nav-link text-white" aria-current="page" href="#">
+                  <span class="fab fa-facebook-f"></span>
+                  <span class="d-none">Facebook</span>
+                </a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link text-white" href="#">
+                  <span class="fab fa-twitter"></span>
+                  <span class="d-none">twitter</span></a
+                >
+              </li>
+              <li class="nav-item">
+                <a class="nav-link text-white" href="#">
+                  <span class="fab fa-instagram"></span>
+                  <span class="d-none">Instagram</span></a
+                >
+              </li>
+              <li class="nav-item">
+                <a class="nav-link text-white" href="#">
+                  <span class="fab fa-snapchat-ghost"></span>
+                  <span class="d-none">snapchat</span></a
+                >
+              </li>
+            </ul>
+            <div class="btn-group my-4">
+              <a class="btn bg-white text-uppercase me-3" href="./login.html"
+                >login</a
+              >
+              <a class="btn btn-orange text-uppercase" href="./register.html"
+                >register</a
+              >
+            </div>
+          </div>
+          <div class="col-12 col-sm-6 col-lg-3">
+            <h4 class="text-white text-uppercase mb-4">information</h4>
+            <nav class="nav flex-column" aria-label="information">
+              <a class="nav-link text-white ps-0" href="terms.html"
+                >Terms of Use</a
+              >
+              <a class="nav-link text-white ps-0" href="privacy-policy.html"
+                >Privacy Policy</a
+              >
+              <a class="nav-link text-white ps-0" href="partnerships.html"
+                >Partnerships</a
+              >
+              <a class="nav-link text-white ps-0" href="sitemap.html"
+                >Sitemap</a
+              >
+            </nav>
+          </div>
+          <div class="col-12 col-sm-6 col-lg-3">
+            <h4 class="text-white text-uppercase mb-4">help</h4>
+            <nav class="nav flex-column" aria-label="information">
+              <a class="nav-link text-white ps-0" href="faqs.html">FAQs</a>
+              <a class="nav-link text-white ps-0" href="how-it-works.html"
+                >How Kobobid Works</a
+              >
+              <a class="nav-link text-white ps-0" href="what-is-bidpack.html"
+                >What Is a BidPack?</a
+              >
+              <a class="nav-link text-white ps-0" href="tips-and-features.html"
+                >Tips & Features</a
+              >
+              <a
+                class="nav-link text-white ps-0"
+                href="kobobid-penny-auction.html"
+                >Kobo Auctions vs. eBay</a
+              >
+              <a
+                class="nav-link text-white ps-0"
+                href="orders-and-shipping.html"
+                >Orders & Shipping</a
+              >
+              <a class="nav-link text-white ps-0" href="payments.html"
+                >Payments</a
+              >
+            </nav>
+          </div>
+          <div class="col-12 col-sm-6 col-lg-3">
+            <h4 class="text-white ps-0 text-uppercase mb-4">about us</h4>
+            <nav class="nav flex-column" aria-label="information">
+              <a class="nav-link text-white ps-0" href="about.html"
+                >About Kobobid</a
+              >
+              <a class="nav-link text-white ps-0" href="kobobid-promise.html"
+                >The Kobobid Promise</a
+              >
+              <a class="nav-link text-white ps-0" href="blog.html">Kobo Blog</a>
+              <a class="nav-link text-white ps-0" href="contact-us.html"
+                >Contact Us</a
+              >
+            </nav>
+          </div>
+        </div>
+        <div class="row p-5">
+          <div class="col-12 text-center">
+            <img
+              style="max-width: 90px; height: auto; width: 100%"
+              src="https://cdn.kobobid.com/web/logo1.png"
+              alt="Institute of Auctioneers"
+            />
+            <img
+              style="max-width: 90px; height: auto; width: 100%"
+              src="https://cdn.kobobid.com/web/logo3.png"
+              alt="National Lottery"
+            />
+            <img
+              style="max-width: 90px; height: auto; width: 100%"
+              src="https://cdn.kobobid.com/web/logo2.png"
+              alt="Keystone Bank"
+            />
+          </div>
+        </div>
+        <div
+          class="
+            row
+            text-white text-center
+            p-3
+            border border-white border-bottom-0 border-start-0 border-end-0
+          "
+        >
+          <div class="col">
+            <p>ICONE BIDS NIG LTD. © 2021 ALL RIGHTS RESERVED</p>
+          </div>
+        </div>
+      </div>
+    </footer>
+
+    <!-- ! Load JavaScript files -->
+    <script src="js/vendor/bootstrap.bundle.min.js" defer></script>
+    <script src="js/vendor/fontawesome.min.js" defer></script>
+    <script src="js/vendor/plugins.min.js" defer></script>
+    <script src="js/utils.min.js" defer></script>
+    <script src="js/toast.min.js" defer></script>
+    <script src="js/store.min.js" defer></script>
+    <script src="js/header.min.js" defer></script>
+    <script src="js/main.min.js" defer></script>
+
+    <!--
+      !Service Worker
+     -->
+    <script>
+      // ServiceWorker is a progressive technology. Ignore unsupported browsers
+      if ('serviceWorker' in navigator) {
+        window.addEventListener('load', () =>
+          navigator.serviceWorker.register('sw.js')
+        );
+      }
+    </script>
+
+    <!--
+      ! Load CSS files
+     -->
+    <noscript id="deferred-styles">
+      <link rel="stylesheet" href="css/vendor/animate.min.css" />
+      <link rel="stylesheet" href="css/vendor/bootstrap.min.css" />
+      <link rel="stylesheet" href="css/font.min.css" />
+      <link rel="stylesheet" href="css/main.min.css" />
+      <link rel="stylesheet" href="css/app.min.css" />
+    </noscript>
+    <script>
+      var loadDeferredStyles = function () {
+        var addStylesNode = document.getElementById('deferred-styles');
+        var replacement = document.createElement('div');
+        replacement.innerHTML = addStylesNode.textContent;
+        document.body.appendChild(replacement);
+        addStylesNode.parentElement.removeChild(addStylesNode);
+      };
+      var raf =
+        window.requestAnimationFrame ||
+        window.mozRequestAnimationFrame ||
+        window.webkitRequestAnimationFrame ||
+        window.msRequestAnimationFrame;
+      if (raf)
+        raf(function () {
+          window.setTimeout(loadDeferredStyles, 0);
+        });
+      else window.addEventListener('load', loadDeferredStyles);
+    </script>
+  </body>
+</html>

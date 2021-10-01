@@ -1,7 +1,7 @@
 {
-  "short_name": "PWA",
-  "name": "PWA app template",
-  "description": "Template for PWA app",
+  "short_name": "Bidnbuy",
+  "name": "Bidnbuy",
+  "description": "Web app for auctioning",
   "icons": [
     {
       "src": "images/logo192.png",
@@ -18,15 +18,80 @@
   "start_url": ".",
   "display": "standalone",
   "scope": "/",
-  "theme_color": "#000000",
+  "theme_color": "#81c6c9",
   "background_color": "#ffffff",
   "shortcuts": [
     {
-      "name": "ShortCut 1",
-      "short_name": "ShortCut 1",
-      "description": "A sample shortcut",
-      "url": "/shortcut.html",
-      "icons": [{ "src": "/images/logo512.png", "sizes": "512x512" }]
+      "name": "Home | Bidnbuy",
+      "short_name": "Home",
+      "description": "Welcome to Bidnbuy",
+      "url": "/index.html",
+      "icons": [
+        {
+          "src": "/images/logo512.png",
+          "sizes": "512x512"
+        }
+      ]
+    },
+    {
+      "name": "How It Works | Bidnbuy",
+      "short_name": "How It Works",
+      "description": "How Bidnbuy works",
+      "url": "/how-it-works.html",
+      "icons": [
+        {
+          "src": "/images/logo512.png",
+          "sizes": "512x512"
+        }
+      ]
+    },
+    {
+      "name": "Winners | Bidnbuy",
+      "short_name": "Winners",
+      "description": "List of winners of past auctions",
+      "url": "/winners.html",
+      "icons": [
+        {
+          "src": "/images/logo512.png",
+          "sizes": "512x512"
+        }
+      ]
+    },
+    {
+      "name": "Contact Us | Bidnbuy",
+      "short_name": "Contact",
+      "description": "Contact us on Bidnbuy",
+      "url": "/contact.html",
+      "icons": [
+        {
+          "src": "/images/logo512.png",
+          "sizes": "512x512"
+        }
+      ]
+    },
+    {
+      "name": "Register | Bidnbuy",
+      "short_name": "Register",
+      "description": "Register an account on Bidnbuy",
+      "url": "/register.html",
+      "icons": [
+        {
+          "src": "/images/logo512.png",
+          "sizes": "512x512"
+        }
+      ]
+    },
+    {
+      "name": "Login | Bidnbuy",
+      "short_name": "Login",
+      "description": "Login to your Bidnbuy account",
+      "url": "/login.html",
+      "icons": [
+        {
+          "src": "/images/logo512.png",
+          "sizes": "512x512"
+        }
+      ]
     }
   ]
 }

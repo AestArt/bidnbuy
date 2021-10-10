@@ -1,4 +1,6 @@
 import { useEffect, useState } from 'react';
+import { Link } from 'react-router-dom';
+import Button from './Button';
 import './Header.css';
 
 const Header = () => {
@@ -9,26 +11,26 @@ const Header = () => {
   const handleClick = () => setClick(!click);
   // const closeMobileMenu = () => setClick(false);
 
-  const showButton = () => {
+  const showbtn = () => {
     if (window.innerWidth <= 998) showNav(true);
     else showNav(false);
   };
 
-  // const scrollHeader = () => {
-  //   if (window.scrollY >= 80) setScroll(true);
-  //   else setScroll(false);
-  // };
+  const scrollHeader = () => {
+    if (window.scrollY >= 80) setScroll(true);
+    else setScroll(false);
+  };
 
   useEffect(() => {
     if (!nav) {
       setClick(false);
     }
     // scrollHeader();
-    showButton();
+    showbtn();
   }, [nav]);
 
-  // window.addEventListener('scroll', scrollHeader);
-  window.addEventListener('resize', showButton);
+  window.addEventListener('scroll', scrollHeader);
+  window.addEventListener('resize', showbtn);
 
   return (
     <header className={!scroll ? 'header' : 'header scroll-header'}>
@@ -41,9 +43,9 @@ const Header = () => {
               <i className='fas fa-times' onClick={handleClick}></i>
             ))}
 
-          <a href='/#' className='nav-logo'>
+          <Link to='/' className='nav-logo'>
             BidnBuy
-          </a>
+          </Link>
 
           {!nav && (
             <>
@@ -69,16 +71,16 @@ const Header = () => {
 
           {!nav ? (
             <ul className='nav-list'>
-              <li>
-                <a href='#login' className='nav-links'>
-                  <span className='button button-primary'>Login</span>
-                </a>
+              <li className='nav-links'>
+                <Button route='register' type='primary'>
+                  Register
+                </Button>
               </li>
 
               <li>
-                <a href='#register' className='nav-links'>
-                  <span className='button button-secondary'>Sign Up</span>
-                </a>
+                <Button route='login' type='primary-outline'>
+                  Sign Up
+                </Button>
               </li>
             </ul>
           ) : (

@@ -2,36 +2,76 @@
 
 :root {
   --body-font: 'Open Sans', sans-serif;
-  --h1-font-size: 1.5rem;
+  --title-font-size: 1.25rem;
   --large-font-size: 1.15rem;
-  --normal-font-size: 0.938rem;
+  --normal-font-size: 0.9rem;
   --small-font-size: 0.808rem;
   --tiny-font-size: 0.625rem;
-  --primary-color: #fabc12;
-  --secondary-color: #037795;
-  --secondary-color-light: #5ca5b3;
+  --primary: #fabc12;
+  --secondary: #037795;
+  --secondary-light: #5ca5b3;
   --light: #f5f5f5;
+  --dark: #000000;
+  --gray: #eff3ff;
 }
 
 @media screen and (min-width: 968px) {
   :root {
-    --h1-font-size: 2.25rem;
-    --large-font-size: 1.85rem;
+    --title-font-size: 1.9rem;
+    --large-font-size: 1.8rem;
     --normal-font-size: 1rem;
     --small-font-size: 0.878rem;
     --tiny-font-size: 0.74rem;
   }
 }
 
-* {
-  box-sizing: border-box;
-  padding: 0;
+html,
+body,
+div,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
   margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+.bg-gray {
+  background-color: var(--gray);
+}
+.bg--primary {
+  background-color: var(--primary);
+}
+.bg--secondary {
+  background-color: var(--secondary);
+}
+.text--primary {
+  color: var(--primary);
+}
+.text--secondary {
+  color: var(--secondary);
+}
+.fz-large {
+  font-size: var(--large-font-size);
+}
+.fz-normal {
+  font-size: var(--normal-font-size);
+}
+.fz-small {
+  font-size: var(--small-font-size);
+}
+.fz-tiny {
+  font-size: var(--tiny-font-size);
 }
 
 body {
   font-family: var(--body-font);
   font-size: var(--normal-font-size);
+}
+.main-content {
+  padding-top: 9vh;
 }
 
 ul {
@@ -53,13 +93,57 @@ button {
   border: none;
 }
 .button {
-  padding: 0.25rem 1rem;
+  padding: 0.35rem 1rem;
   color: #fff;
+  display: inline-block;
   border-radius: 2px;
+  cursor: pointer;
+  font-size: var(--small-font-size);
+  font-weight: 700;
+  text-transform: capitalize;
 }
-.button.button-primary {
-  background-color: var(--primary-color);
+.button.lg {
+  padding: 0.5rem 1.5rem;
+  font-size: var(--normal-font-size);
+  font-weight: 800;
 }
-.button.button-secondary {
-  background-color: var(--secondary-color);
+.button.primary {
+  background-color: var(--primary);
+}
+.button.primary-outline {
+  background-color: transparent;
+  color: var(--light);
+  border: 1px solid var(--light);
+}
+.button.secondary {
+  background-color: var(--secondary);
+}
+.button.secondary-outline {
+  background-color: transparent;
+  color: var(--primary);
+  border: 1px solid var(--primary);
+}
+.title-header {
+  font-size: var(--title-font-size);
+}
+.flex-center {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.flex-between {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.flex-column {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.bbb {
+  border: 2px solid green;
 }

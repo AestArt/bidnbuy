@@ -1,5 +1,5 @@
 footer {
-  background-color: var(--secondary-color);
+  background-color: var(--secondary);
   color: #fff;
 }
 .footer-links {
@@ -42,7 +42,7 @@ footer {
 }
 @media screen and (max-width: 480px) {
   .footer-list {
-    flex-basis: 100%;
+    flex-basis: 50%;
     margin-bottom: 2rem;
   }
 }

@@ -1,75 +1,97 @@
-import Button from './Button';
-import './Featured.css';
+import { Button, FlexContainer } from '../components/styles/Reusabled';
+import styled from 'styled-components';
+import { mobile, tab } from '../components/styles/Responsive'
+
+const BidContainer = styled.div`
+  padding: 2rem 0;
+  display: grid;
+  grid-template-columns: repeat(5, 1fr);
+  gap: 0.5rem;
+  ${tab({ 
+    gridTemplateColumns: 'repeat(3, 1fr)',
+  })}
+  ${mobile({ 
+    gridTemplateColumns: 'repeat(2, 1fr)',
+  })};
+`;
+
+const Bids = styled.div`
+  border-radius: 0;
+  padding: 1rem 0;
+  box-shadow: 0 0.125rem 0.25rem rgba(0, 0, 0, 0.075);
+  text-align: center;
+
+  p {
+    font-size: var(--small);
+  }
+`;
 
 const Featured = () => {
+  const bids = [
+    {
+      id: 1,
+      title: 'Title 1',
+      img: 'https://images.pexels.com/photos/1371998/pexels-photo-1371998.jpeg?auto=compress&cs=tinysrgb&h=750&w=1260',
+      startsAt: '10:00 AM',
+      time: '00:00:49:35',
+    },
+    {
+      id: 2,
+      title: 'Title 2',
+      img: 'https://images.pexels.com/photos/1371998/pexels-photo-1371998.jpeg?auto=compress&cs=tinysrgb&h=750&w=1260',
+      startsAt: '10:00 AM',
+      time: '00:00:49:35',
+    },
+    {
+      id: 3,
+      title: 'Title 3',
+      img: 'https://images.pexels.com/photos/1371998/pexels-photo-1371998.jpeg?auto=compress&cs=tinysrgb&h=750&w=1260',
+      startsAt: '10:00 AM',
+      time: '00:00:49:35',
+    },
+    {
+      id: 4,
+      title: 'Title 4',
+      img: 'https://images.pexels.com/photos/1371998/pexels-photo-1371998.jpeg?auto=compress&cs=tinysrgb&h=750&w=1260',
+      startsAt: '10:00 AM',
+      time: '00:00:49:35',
+    },
+    {
+      id: 5,
+      title: 'Title 5',
+      img: 'https://images.pexels.com/photos/1371998/pexels-photo-1371998.jpeg?auto=compress&cs=tinysrgb&h=750&w=1260',
+      startsAt: '10:00 AM',
+      time: '00:00:49:35',
+    },
+  ];
+  
   return (
     <section className='container pt-5'>
-      <div className='flex-between'>
-        <h3 className='title-header'>Featured Bids</h3>
-        <Button type='secondary-outline'>View More</Button>
-      </div>
+      <FlexContainer justify='space-between'>
+        <h1 className='fz-large'>Featured Bids</h1>
+        <Button outline>View All</Button>
+      </FlexContainer>
 
-      <div className='bid-container'>
-        <div className='card bid'>
-          <h5>Title</h5>
-          <div className='card-body flex-column '>
-            <div className='bid-image'>
-              <img src='images/greek-vase.png' className='img-fluid ' alt='...' />
+      <BidContainer>
+        {bids.map((bid) => (
+          <Bids className='card' key={bid.id}>
+          <h5>{bid.title}</h5>
+          <div className='card-body flex-column'>
+            <div>
+              <img
+                src={bid.img}
+                className='img-fluid '
+                alt='...'
+              />
             </div>
-            <p>Starts at 11:30 PM</p>
-            <p className='fw-bold'>00:00:49:35</p>
-            <Button>Bid Now</Button>
+            <p>Starts at {bid.startsAt}</p>
+            <p className='fw-bold'>{bid.time}</p>
+            <Button outline>Bid Now</Button>
           </div>
-        </div>
-
-        <div className='card bid'>
-          <h5>Title</h5>
-          <div className='card-body flex-column '>
-            <div className='bid-image'>
-              <img src='images/greek-vase.png' className='img-fluid ' alt='...' />
-            </div>
-            <p>Starts at 10:30 PM</p>
-            <p className='fw-bold'>00:00:49:35</p>
-            <Button>Bid Now</Button>
-          </div>
-        </div>
-
-        <div className='card bid'>
-          <h5>Title</h5>
-          <div className='card-body flex-column '>
-            <div className='bid-image'>
-              <img src='images/greek-vase.png' className='img-fluid ' alt='...' />
-            </div>
-            <p>Starts at 10:30 PM</p>
-            <p className='fw-bold'>00:00:49:35</p>
-            <Button>Bid Now</Button>
-          </div>
-        </div>
-
-        <div className='card bid'>
-          <h5>Title</h5>
-          <div className='card-body flex-column '>
-            <div className='bid-image'>
-              <img src='images/greek-vase.png' className='img-fluid ' alt='...' />
-            </div>
-            <p>Starts at 10:30 PM</p>
-            <p className='fw-bold'>00:00:49:35</p>
-            <Button>Bid Now</Button>
-          </div>
-        </div>
-
-        <div className='card bid'>
-          <h5>Title</h5>
-          <div className='card-body flex-column '>
-            <div className='bid-image'>
-              <img src='images/greek-vase.png' className='img-fluid ' alt='...' />
-            </div>
-            <p>Starts at 10:30 PM</p>
-            <p className='fw-bold'>00:00:49:35</p>
-            <Button>Bid Now</Button>
-          </div>
-        </div>
-      </div>
+        </Bids>
+        ))}
+        
+      </BidContainer>
     </section>
   );
 };

@@ -1,46 +1,83 @@
 import { Link } from 'react-router-dom';
-import './Footer.css';
+import styled from 'styled-components';
+import { FlexContainer } from './styles/Reusabled';
+import { tab } from '../components/styles/Responsive';
 
+const Foot = styled.footer`
+  padding: 3rem 0;
+  background-color: var(--primary);
+  color: var(--light);
+`;
+const FooterText = styled.div`
+  flex-basis: 40%;
+  ${tab({ flexBasis: '100%', marginBottom: '2rem' })}
+  h4 {
+    font-size: var(--medium);
+  }
+  p {
+    font-size: var(--small);
+  }
+`;
+
+const FooterLinks = styled.div`
+  flex-basis: 60%;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  flex-wrap: wrap;
+  ${tab({ flexBasis: '100%', justifyContent: 'start' })}
+`;
+
+const FooterLists = styled.div`
+display: flex;
+flex-direction: column;
+justify-content: space-evenly;
+${tab({ flexBasis: '50%', marginBottom: '2rem' })}
+}
+
+h5 {
+  text-transform: capitalize;
+  font-weight: 600;
+  margin-bottom: 1rem;
+}
+
+a {
+  font-variant: small-caps;
+  color: var(--light);
+  padding: 0.3rem 0;
+  font-size: var(--small);
+}
+`;
 const Footer = () => {
-  const handleSubmit = (e) => {
-    e.preventDefault();
-  };
   return (
-    <footer className='py-5'>
+    <Foot>
       <div className='container'>
-        <div className='row align-items-center'>
-          <div className='col-md-5 col-12'>
-            <div className='footer-text'>
-              <h4>BidnBuy</h4>
-              <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Recusandae, assumenda?</p>
-            </div>
-            <div>
-              <form className='d-flex py-2' onSubmit={handleSubmit}>
-                <input type='email' className='subscribe' />
-                <button className='button primary' type='submit'>
-                  Subscribe
-                </button>
-              </form>
-              <i className="form-text text-light">By subscribing, you'll get the lastest news and update for BidnBuy.</i>
-            </div>
-          </div>
-          <div className='col-12 col-md-7 footer-links'>
-            <div className='footer-list'>
-              <h5 className='mb-3'>Information</h5>
+        <FlexContainer align='center'>
+          <FooterText>
+            <h4>BidnBuy</h4>
+            <p>
+              There are many variations of passages of Lorem Ipsum available, but the majority have
+              suffered alteration in some form, by injected humour, or randomised words which don’t
+              look even slightly believable.
+            </p>
+          </FooterText>
+          <FooterLinks>
+            <FooterLists>
+              <h5>Information</h5>
               <Link to='#'>Terms of Use</Link>
               <Link to='#'>Privacy Policy</Link>
               <Link to='#'>Partnerships</Link>
               <Link to='#'>About Us</Link>
-            </div>
-            <div className='footer-list'>
-              <h5 className='mb-3'>Help</h5>
+            </FooterLists>
+            <FooterLists>
+              <h5>Help</h5>
               <Link to='#'>FAQs</Link>
               <Link to='#'>How BidnBuy Works?</Link>
               <Link to='#'>BidnBuy Features</Link>
               <Link to='#'>Payments</Link>
-            </div>
-            <div className='footer-list'>
-              <h5 className='mb-3'>Contact Us</h5>
+            </FooterLists>
+            <FooterLists>
+              <h5>Contact Us</h5>
               <Link to='#'>
                 <i className='fas fa-envelope-open-text me-2'></i>Email
               </Link>
@@ -53,11 +90,11 @@ const Footer = () => {
               <Link to='#'>
                 <i className='fas fa-mobile-alt me-2'></i>Phone
               </Link>
-            </div>
-          </div>
-        </div>
+            </FooterLists>
+          </FooterLinks>
+        </FlexContainer>
       </div>
-    </footer>
+    </Foot>
   );
 };
 

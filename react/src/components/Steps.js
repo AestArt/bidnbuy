@@ -1,37 +1,47 @@
-import './Steps.css';
+import styled from 'styled-components';
+import { FlexContainer, FlexItem } from '../components/styles/Reusabled';
+
+const Step = styled.div`
+  display: flex;
+  flex-direction: column;
+  width: 7rem;
+  border: 3px solid #000;
+  border-radius: 50%;
+  overflow: hidden;
+  margin-bottom: 1rem;
+  color: var(--dark);
+`;
 
 const Steps = () => {
   return (
-    <section className='py-4 bg--secondary text-light mb-5'>
+    <section className='py-4 mb-5'>
       <div className='container'>
-        <div className='row align-items-center'>
-          <div className='row col justify-content-around text-center text-capitalize fw-bold'>
-            <div className='col-md-3 col-sm-6 flex-column'>
-              <div className='step'>
-                <img src='images/greek-vase.png' className='img-fluid' alt='...' />
-              </div>
-              <p>Sign Up on Kobobid.com</p>
-            </div>
-            <div className='col-md-3 col-sm-6 flex-column'>
-              <div className='step'>
-                <img src='images/greek-vase.png' className='img-fluid' alt='...' />
-              </div>
-              <p>Purchase a BidPack</p>
-            </div>
-            <div className='col-md-3 col-sm-6 flex-column'>
-              <div className='step'>
-                <img src='images/greek-vase.png' className='img-fluid' alt='...' />
-              </div>
-              <p>Start Bidding</p>
-            </div>
-            <div className='col-md-3 col-sm-6 flex-column'>
-              <div className='step'>
-                <img src='images/greek-vase.png' className='img-fluid' alt='...' />
-              </div>
-              <p>Claim Win/Buy It Now</p>
-            </div>
-          </div>
-        </div>
+        <FlexContainer>
+          <FlexItem className='flex-column'>
+            <Step>
+              <img src='images/greek-vase.png' className='img-fluid' alt='...' />
+            </Step>
+              <StepDesc>Sign Up on BidnBuy.com</StepDesc>
+          </FlexItem>
+          <FlexItem className='flex-column'>
+            <Step >
+              <img src='images/greek-vase.png' className='img-fluid' alt='...' />
+            </Step>
+            <StepDesc>Purchase a BidPack</StepDesc>
+          </FlexItem>
+          <FlexItem className='flex-column'>
+            <Step>
+              <img src='images/greek-vase.png' className='img-fluid' alt='...' />
+            </Step>
+            <StepDesc>Start Bidding</StepDesc>
+          </FlexItem>
+          <FlexItem className='flex-column'>
+            <Step className='step'>
+              <img src='images/greek-vase.png' className='img-fluid' alt='...' />
+            </Step>
+            <StepDesc>Claim Win/Buy It Now</StepDesc>
+          </FlexItem>
+        </FlexContainer>
       </div>
     </section>
   );
